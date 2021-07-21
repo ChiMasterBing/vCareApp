@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="imgPrompts">
+        <item>@drawable/ic_launcher_background</item>
+    </array>
+    <array name="imgPrompts2">
+        <item>@drawable/ic_launcher_foreground</item>
+    </array>
+    <array name="imgPrompts3">
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_foreground</item>
+    </array>
+</resources>
