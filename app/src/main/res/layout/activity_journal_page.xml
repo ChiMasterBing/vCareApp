@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD6BA"
+    tools:context=".JournalPage">
+
+    <LinearLayout
+        android:id="@+id/ActionBarProductInfo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backJournal"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="414dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageBig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/txtPrompt3"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:onClick="onImg1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/txtQuote3"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto_mono"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:onClick="onTxtQuote1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onImg1Clicked"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/txtPrompt2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:onClick="onTxtPrompt1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/txtQuote2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto_mono"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:onClick="onTxtQuote1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onImg1Clicked"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/txtPrompt1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:onClick="onTxtPrompt1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/txtQuote1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto_mono"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:onClick="onTxtQuote1Clicked"
+                android:textColor="#EC9192"
+                android:textSize="25sp"
+                app:backgroundTint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onImg1Clicked"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageBig"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="start|top"
+        android:hint="Start writing here..."
+        android:inputType="textMultiLine"
+        android:onClick="onEditTextClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Response"
+        app:backgroundTint="#BEE3DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        android:onClick="onSaveBtnClicked"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
