@@ -1,0 +1,2 @@
+rootProject.name = "VCare"
+include ':app'

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">VCare</string>
+    <string-array name="prompts">
+        <item>If you were a superhero, what would your superpower be?</item>
+        <item>This is prompt 1.1</item>
+        <item>This is prompt 1.2</item>
+    </string-array>
+    <string-array name="prompts2">
+        <item>This is prompt 2.0</item>
+        <item>This is prompt 2.1</item>
+        <item>This is prompt 2.2</item>
+    </string-array>
+    <string-array name="prompts3">
+        <item>This is prompt 3.0</item>
+        <item>This is prompt 3.1</item>
+        <item>This is prompt 3.2</item>
+    </string-array>
+    <string-array name="quotes">
+        <item>This is quote 1.0</item>
+        <item>This is quote 1.1</item>
+        <item>This is quote 1.2</item>
+    </string-array>
+    <string-array name="quotes2">
+        <item>This is quote 2.0</item>
+        <item>This is quote 2.1</item>
+        <item>This is quote 3.2</item>
+    </string-array>
+    <string-array name="quotes3">
+        <item>This is quote 3.0</item>
+        <item>This is quote 3.1</item>
+        <item>This is quote 3.2</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".AboutUs">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_arrowback" />
+
+    <TextView
+        android:id="@+id/abtUsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/abtUsContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abtUsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="We are a student-led group called BranchOut! Innovator, a project-based program designed for students to use their skills to create meaningful changes in their communities. We have another app, SOLve, designed for SOL test preparation."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/feedbackHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abtUsContext"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="Give us feedback!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/feedbackBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackHeader"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_1"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="top|left"
+        android:hint="Type your text here"
+        android:lines="8"
+        android:padding="12dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackBox"
+        android:layout_alignRight="@id/feedbackBox"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners_2"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="12dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/termsConditionsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="24sp"
+        android:layout_below="@id/feedbackButton"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corners_4"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="10dp"
+        android:text="Terms and Conditions"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/privacyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="24sp"
+        android:layout_below="@id/termsConditionsBtn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_4"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="10dp"
+        android:text="Privacy Policy"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />0
+
+    <Button
+        android:id="@+id/citationsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="24sp"
+        android:layout_below="@id/privacyBtn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_4"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="10dp"
+        android:text="Image Citations"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+</RelativeLayout>
