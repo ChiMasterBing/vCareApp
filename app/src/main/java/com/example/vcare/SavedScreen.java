@@ -53,7 +53,8 @@ public class SavedScreen extends AppCompatActivity implements View.OnClickListen
                 System.out.println("Going to Articles page.");
                 break;
             case R.id.quotesButton:
-                System.out.println("Going to Quotes page.");
+                startActivity(new Intent(SavedScreen.this, DailyQuote.class));
+                finish();
                 break;
             case R.id.allSavedButton:
                 System.out.println("Going to All Saved page.");
