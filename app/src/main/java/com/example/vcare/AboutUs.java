@@ -61,8 +61,8 @@ public class AboutUs extends AppCompatActivity {
         privacyBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //startActivity(new Intent(AboutUsActivity.this, PrivacyPolicyActivity.class)); => Navigate to privacy policy screen
-                //finish();
+                startActivity(new Intent(AboutUs.this, PrivacyPolicy.class));
+                finish();
             }
         });
 

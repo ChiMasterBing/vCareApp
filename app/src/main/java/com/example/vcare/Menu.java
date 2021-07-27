@@ -56,8 +56,8 @@ public class Menu extends AppCompatActivity {
         crisisHotline.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //startActivity(new Intent(Menu.this, CrisisHotlineActivity.class)); //Switch to crisis hotline screen
-                //finish();
+                startActivity(new Intent(Menu.this, CrisisHotlines.class)); //Switch to crisis hotline screen
+                finish();
             }
         });
     }
