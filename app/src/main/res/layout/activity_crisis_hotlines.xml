@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrisisHotlines"
+    android:background="#ffffff">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrowback"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/black"
+        android:text="Crisis Hotlines"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="If you are in a crisis, the resources below can provide you with immediate help and support"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="18dp" />
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtDetails"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutResources"
+            android:background="@color/light_green"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_mono"
+                android:textColor="@color/black"
+                android:text="Emergency"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt911"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEmergency"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="911"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtSuicidePreventionLifeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt911"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:textColor="@color/black"
+                android:text="Suicide Prevention Lifeline"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLifelineNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSuicidePreventionLifeline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="1-8000-273-TALK(8255)"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtCrisisTextLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLifelineNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_mono"
+                android:textColor="@color/black"
+                android:text="Crisis Text Line"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTextLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCrisisTextLine"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="Text &quot;DESERVE&quot; to 741-741"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtSAMHSANationalHelpline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTextLine"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_mono"
+                android:textColor="@color/black"
+                android:text="SAMHSA National Helpline"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtHelpline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSAMHSANationalHelpline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="1-800-662-HELP(4357)"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtNationalDomesticViolenceHotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtHelpline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_mono"
+                android:textColor="@color/black"
+                android:text="National Domestic Violence Hotline"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtHotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNationalDomesticViolenceHotline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="1-800-799-SAFE(7233)"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
