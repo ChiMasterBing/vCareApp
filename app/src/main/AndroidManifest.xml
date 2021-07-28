@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VCare">
-        <activity android:name=".AllSaved"></activity>
+        <activity android:name=".AllSaved" />
         <activity android:name=".CrisisHotlines" />
         <activity android:name=".PrivacyPolicy" />
         <activity android:name=".Loading" />

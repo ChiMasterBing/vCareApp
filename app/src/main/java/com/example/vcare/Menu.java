@@ -40,7 +40,7 @@ public class Menu extends AppCompatActivity {
         settings.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(Menu.this, AccountInfo.class)); //Switch to account screen
+                startActivity(new Intent(Menu.this, AccountSettings.class)); //Switch to account screen
                 finish();
             }
         });
