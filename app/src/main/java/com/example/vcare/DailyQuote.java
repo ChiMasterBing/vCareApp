@@ -9,19 +9,24 @@ import android.widget.ImageButton;
 
 
 public class DailyQuote extends AppCompatActivity {
+
     private ImageButton back;
+    private ImageButton favorite;
+    boolean isChecked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_quote);
 
+        isChecked = false;
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
         back = findViewById(R.id.backBtn);
+        favorite = findViewById(R.id.favBtn);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -30,5 +35,22 @@ public class DailyQuote extends AppCompatActivity {
                 finish();
             }
         });
+
+        favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                if (isChecked) {
+                    favorite.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24);
+                    isChecked = false;
+                    System.out.println("Unsave the quote");
+                } else {
+                    favorite.setBackgroundResource(R.drawable.ic_baseline_favorite_24);
+                    isChecked = true;
+                    System.out.println("Save the quote");
+                }
+            }
+        });
+
+
     }
 }
