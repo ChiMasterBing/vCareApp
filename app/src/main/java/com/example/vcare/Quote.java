@@ -1,8 +1,7 @@
 package com.example.vcare;
 
 public class Quote {
-    private String quoteTxt;
-    private String author;
+    String quoteTxt, author;
 
     public Quote(String quoteTxt, String author) {
         this.quoteTxt = quoteTxt;
