@@ -93,7 +93,7 @@
             android:paddingHorizontal="18dp"
             android:paddingTop="25dp"
             android:paddingBottom="12dp"
-            android:src="drawable/sittinggirl"
+            android:src="@drawable/sittinggirl"
             android:text="mindfulness"
             android:textAlignment="viewStart"
             android:textAllCaps="false"

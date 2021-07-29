@@ -1,4 +1,4 @@
-package com.example.vcareapplication;
+package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
