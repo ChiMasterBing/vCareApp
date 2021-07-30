@@ -53,7 +53,7 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
         email = findViewById(R.id.showEmail);
         pass = findViewById(R.id.showPass);
         user = FirebaseAuth.getInstance().getCurrentUser();
-        ref = FirebaseDatabase.getInstance().getReference("Users");
+        ref = FirebaseDatabase.getInstance().getReference("UserData");
         uid = user.getUid();
         ref.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

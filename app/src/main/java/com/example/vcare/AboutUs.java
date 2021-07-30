@@ -61,8 +61,8 @@ public class AboutUs extends AppCompatActivity {
         privacyBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //startActivity(new Intent(AboutUsActivity.this, PrivacyPolicyActivity.class)); => Navigate to privacy policy screen
-                //finish();
+                startActivity(new Intent(AboutUs.this, PrivacyPolicy.class));
+                finish();
             }
         });
 
@@ -70,8 +70,8 @@ public class AboutUs extends AppCompatActivity {
         citationsBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //startActivity(new Intent(AboutUsActivity.this, CitationsActivity.class)); => Navigate to image citations screen
-                //finish();
+                startActivity(new Intent(AboutUs.this, Citations.class)); //=> Navigate to image citations screen
+                finish();
             }
         });
 

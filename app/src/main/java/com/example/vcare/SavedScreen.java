@@ -57,7 +57,8 @@ public class SavedScreen extends AppCompatActivity implements View.OnClickListen
                 finish();
                 break;
             case R.id.allSavedButton:
-                System.out.println("Going to All Saved page.");
+                startActivity(new Intent(SavedScreen.this, AllSaved.class));
+                finish();
                 break;
             default:
                 System.out.println("This button is not yet registered.");
