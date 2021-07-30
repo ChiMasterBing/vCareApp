@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "22958737179",
+    "firebase_url": "https://innovator-vcare-default-rtdb.firebaseio.com",
     "project_id": "innovator-vcare",
     "storage_bucket": "innovator-vcare.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:22958737179:android:2385d62142d6374b8e35be",
+        "mobilesdk_app_id": "1:22958737179:android:b3590cf086a783438e35be",
         "android_client_info": {
           "package_name": "com.example.vcare"
         }
