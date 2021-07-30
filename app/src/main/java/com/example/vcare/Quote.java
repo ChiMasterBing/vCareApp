@@ -3,6 +3,7 @@ package com.example.vcare;
 public class Quote {
     String quoteTxt, author;
 
+    public Quote() {}
     public Quote(String quoteTxt, String author) {
         this.quoteTxt = quoteTxt;
         this.author = author;
