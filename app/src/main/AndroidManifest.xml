@@ -13,20 +13,21 @@
         <activity android:name=".Mindfulness" />
         <activity android:name=".Menu" />
         <activity android:name=".AboutUs" />
+        <activity android:name=".DailyQuote" />
         <activity android:name=".JournalPage" />
         <activity android:name=".SavedScreen" />
         <activity android:name=".RegisterPage" />
         <activity android:name=".ForgotPassPage" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".AccountInfo" />
-        <activity android:name=".AccountSettings" />
-        <activity android:name=".HomeScreen">
+        <activity android:name=".LoginPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AccountInfo" />
+        <activity android:name=".AccountSettings" />
+        <activity android:name=".HomeScreen" />
 
         <meta-data
             android:name="preloaded_fonts"

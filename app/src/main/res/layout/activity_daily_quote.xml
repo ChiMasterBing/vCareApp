@@ -15,11 +15,18 @@
         android:background="@null"
         android:src="@drawable/ic_arrowback" />
 
-    <TextView
-        android:id="@+id/titleView"
+    <ImageButton
+        android:id="@+id/favBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anxiety"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/quoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textSize="30dp"
         android:textStyle="bold"
         android:fontFamily="@font/roboto_mono"
@@ -28,13 +35,12 @@
         />
 
     <TextView
-        android:id="@+id/descriptionView"
+        android:id="@+id/quoteView"
         android:layout_width="280dp"
         android:layout_height="600dp"
-        android:layout_below="@+id/titleView"
+        android:layout_below="@+id/quoteTitle"
         android:layout_marginTop="21dp"
         android:layout_centerHorizontal="true"
-        android:text="...It is not uncommon for people diagnosed with anxiety discords to also have depression. Almost half of those diagnosed with depression also have some sort of anxiety disorder. There are many different types of anxiety, the most common of which being Generalized Anxiety disorder, Panic Disorders, or Phobias. More detail can be found in other articles..."
         android:textSize="21dp"
         android:fontFamily="@font/roboto_mono"
         />

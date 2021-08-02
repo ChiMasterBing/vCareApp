@@ -112,7 +112,7 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            FirebaseDatabase.getInstance().getReference("Users")
+                            FirebaseDatabase.getInstance().getReference("UserData")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(new User(getFName, getLName, getEmail, getNumber, getPass1)).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

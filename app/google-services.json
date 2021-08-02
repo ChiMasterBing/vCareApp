@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "535860610702",
-    "project_id": "vcareapp-login",
-    "storage_bucket": "vcareapp-login.appspot.com"
+    "project_number": "22958737179",
+    "firebase_url": "https://innovator-vcare-default-rtdb.firebaseio.com",
+    "project_id": "innovator-vcare",
+    "storage_bucket": "innovator-vcare.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:535860610702:android:32f042d3377181108aabdf",
+        "mobilesdk_app_id": "1:22958737179:android:b3590cf086a783438e35be",
         "android_client_info": {
           "package_name": "com.example.vcare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "535860610702-tt2sopg6mahupuvhlv9ljkob9ibvqcte.apps.googleusercontent.com",
+          "client_id": "22958737179-s4g1j1r5ph3drpm2klrodhp9diti8mhf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCeHCL6mMZcFqnMvHPCVsS2FsbLmhvPrSQ"
+          "current_key": "AIzaSyBPMFqigakU76o1byqRE5VAFUXb8QChZ9Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "535860610702-tt2sopg6mahupuvhlv9ljkob9ibvqcte.apps.googleusercontent.com",
+              "client_id": "22958737179-s4g1j1r5ph3drpm2klrodhp9diti8mhf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,9 +1,11 @@
 package com.example.vcare;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,12 +13,18 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+
+import org.jetbrains.annotations.NotNull;
+
 public class ForgotPassPage extends AppCompatActivity implements View.OnClickListener{
     ImageButton back;
     TextView title, header;
-    EditText email;
+    EditText emailText;
     Button reset;
-
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +32,8 @@ public class ForgotPassPage extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_forgot_pass_page);
 
         init();
+
+        mAuth = FirebaseAuth.getInstance();
 
         back.setOnClickListener(this);
         reset.setOnClickListener(this);
@@ -33,7 +43,7 @@ public class ForgotPassPage extends AppCompatActivity implements View.OnClickLis
         back = findViewById(R.id.backForgot);
         title = findViewById(R.id.registerTitle);
         header = findViewById(R.id.forgotHeader);
-        email = findViewById(R.id.emailReset);
+        emailText = findViewById(R.id.emailReset);
         reset = findViewById(R.id.reset);
     }
 
@@ -45,7 +55,7 @@ public class ForgotPassPage extends AppCompatActivity implements View.OnClickLis
                 finish();
                 break;
             case R.id.reset:
-                Toast.makeText(getApplicationContext(), "Please check your email for a link to reset your password.", Toast.LENGTH_LONG).show();
+                reset();
                 break;
             default:
                 System.out.println("This button is not yet registered.");
@@ -53,5 +63,32 @@ public class ForgotPassPage extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+    private void reset(){
+        String email = emailText.getText().toString().trim();
 
+        if(email.isEmpty()){
+            emailText.setError("Email is required");
+            emailText.requestFocus();
+            return;
+        }
+
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            emailText.setError("Provide a valid email");
+            emailText.requestFocus();
+            return;
+        }
+
+        mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull @NotNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(getApplicationContext(), "Please check your email for a link to reset your password.", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+    }
 }
