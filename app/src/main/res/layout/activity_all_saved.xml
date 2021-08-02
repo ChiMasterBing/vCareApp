@@ -41,7 +41,7 @@
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/allsaved"
         android:layout_centerHorizontal="true"
         android:layout_below = "@id/savedRecView"
         android:layout_marginBottom="15dp"/>
