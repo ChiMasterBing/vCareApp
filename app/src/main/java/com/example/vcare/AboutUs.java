@@ -45,7 +45,7 @@ public class AboutUs extends AppCompatActivity {
             public void onClick(View v){
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"innovatorvcaretest@gmail.com"});
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"velbranchout.innovator@gmail.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
                 i.putExtra(Intent.EXTRA_TEXT   , feedback.getText().toString().trim());
                 try {
