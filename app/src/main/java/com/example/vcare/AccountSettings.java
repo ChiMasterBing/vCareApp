@@ -1,7 +1,5 @@
 package com.example.vcare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,7 +8,8 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -59,18 +58,6 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
                 }
             }
         });
-
-        signOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("remember", "false");
-                editor.apply();
-
-            }
-        });
     }
 
     private void init(){
@@ -93,6 +80,10 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.signOut:
                 FirebaseAuth.getInstance().signOut();
+                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("remember", "false");
+                editor.apply();
                 startActivity(new Intent(AccountSettings.this, LoginPage.class));
                 break;
             default:

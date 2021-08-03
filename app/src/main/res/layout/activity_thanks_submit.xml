@@ -8,13 +8,6 @@
     android:padding="18dp"
     tools:context=".ThanksSubmit">
 
-    <ImageButton
-        android:id="@+id/backBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:src="@drawable/ic_arrowback" />
-
     <TextView
         android:id="@+id/thanksTxt"
         android:layout_width="match_parent"
