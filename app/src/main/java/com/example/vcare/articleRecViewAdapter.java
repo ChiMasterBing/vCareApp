@@ -1,6 +1,7 @@
 package com.example.vcare;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,11 @@ public class articleRecViewAdapter extends RecyclerView.Adapter<articleRecViewAd
     private Context context;
     public articleRecViewAdapter(Context context) {
         this.context = context;
+    }
 
+    public articleRecViewAdapter(Context context, ArrayList<Article> articles) {
+        this.context = context;
+        this.articles = articles;
     }
 
     @NonNull
@@ -35,8 +40,10 @@ public class articleRecViewAdapter extends RecyclerView.Adapter<articleRecViewAd
         holder.articleName.setText(articles.get(position).getTitle());
         holder.parent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                //context.startActivity(ArticleActivity.class); => Navigate to article screen
-                //finish();
+                Intent intent = new Intent(context, ArticleWebView.class);
+                String weblink = articles.get(position).getWeblink();
+                intent.putExtra("article-url", weblink);
+                context.startActivity(intent); // => Navigate to article screen
             }
         });
         //Set correct color
