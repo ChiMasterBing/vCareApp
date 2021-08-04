@@ -1,22 +1,37 @@
 package com.example.vcare;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Mindfulness extends AppCompatActivity {
 
     private RecyclerView sbRecView;
     private RecyclerView mindfulRecView;
-    private RecyclerView dailyQRecView;
     private ImageButton back;
+    private FirebaseDatabase mAuth;
+    private DatabaseReference myRef;
+    private ArrayList<Article> sbArticles;
+    private ArrayList<Article> mindfulArticles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +45,6 @@ public class Mindfulness extends AppCompatActivity {
 
         sbRecView = findViewById(R.id.sbArticlesRecView);
         mindfulRecView = findViewById(R.id.mArticlesRecView);
-        dailyQRecView = findViewById(R.id.quotesRecView);
 
         back = findViewById(R.id.backBtn);
 
@@ -42,16 +56,11 @@ public class Mindfulness extends AppCompatActivity {
             }
         });
 
+        mAuth = FirebaseDatabase.getInstance();
+        myRef = mAuth.getReference("Articles");
 
-        ArrayList<Article> sbArticles = new ArrayList();
-        ArrayList<Article> mindfulArticles = new ArrayList();
-        ArrayList<Quote> dailyQuotes = new ArrayList();
-        //Placeholder; Change below to firebase articles
-        for (int i = 1; i <= 6; i++){
-            sbArticles.add(new Article("Article " + i));
-            mindfulArticles.add(new Article("Article " + i));
-            dailyQuotes.add(new Quote("Quote " + i, "Unknown"));
-        }
+        sbArticles = new ArrayList<>();
+        mindfulArticles = new ArrayList<>();
 
         //Rest should work for firebase
         articleRecViewAdapter sbAdapter = new articleRecViewAdapter(this);
@@ -64,9 +73,35 @@ public class Mindfulness extends AppCompatActivity {
         mindfulRecView.setAdapter(mindfulAdapter);
         mindfulRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        QuoteRecViewAdapter dailyQuoteAdapter = new QuoteRecViewAdapter(this);
-        dailyQuoteAdapter.setQuotes(dailyQuotes);
-        dailyQRecView.setAdapter(dailyQuoteAdapter);
-        dailyQRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        // Retrieve Article data from firebase
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot snapshot : dataSnapshot.child("Science of the Brain").getChildren()) {
+                    Article article = snapshot.getValue(Article.class);
+                    sbArticles.add(article);
+                }
+
+                for (DataSnapshot snapshot : dataSnapshot.child("Mindfulness").getChildren()) {
+                    Article article = snapshot.getValue(Article.class);
+                    mindfulArticles.add(article);
+                }
+
+                // shuffle Articles at random
+                Collections.shuffle(sbArticles);
+                Collections.shuffle(mindfulArticles);
+
+                // update dataset
+                sbAdapter.setArticles(sbArticles);
+                mindfulAdapter.setArticles(mindfulArticles);
+
+            }
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+                Toast.makeText(Mindfulness.this, error.toException().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }

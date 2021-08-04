@@ -32,7 +32,8 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:gravity="start" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sbArticlesRecView"
@@ -54,7 +55,8 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:gravity="start" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mArticlesRecView"
@@ -65,28 +67,5 @@
         android:scrollbars="horizontal">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-    <TextView
-        android:id="@+id/quotesText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto_mono"
-        android:text="Daily Quotes"
-        android:textAlignment="viewStart"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/quotesRecView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:scrollbars="horizontal">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
 
 </LinearLayout>
