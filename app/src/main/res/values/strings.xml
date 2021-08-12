@@ -30,5 +30,10 @@
         <item>This is quote 3.1</item>
         <item>This is quote 3.2</item>
     </string-array>
+    <string-array name="securityQuestions">
+        <item>What street do you live on?</item>
+        <item>Who was your favorite first grade teacher?</item>
+        <item>What is the name of your first pet?</item>
+    </string-array>
 
 </resources>

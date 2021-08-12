@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecurityKey">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_arrowback" />
+
+    <TextView
+        android:id="@+id/secKeyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security Key"
+        android:fontFamily="@font/roboto_mono"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/backBtn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secKeyTitle"
+        android:layout_marginTop="45dp"
+        android:padding="23dp">
+
+        <TextView
+            android:id="@+id/promptCurrentKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Current Security Key"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtCurrentKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/promptCurrentKey"
+            android:hint="Type Text Here..."
+            android:background="@drawable/rounded_corners_3"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/promptNewKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="New Security Key"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtCurrentKey"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/edtNewKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/promptNewKey"
+            android:hint="Type Text Here..."
+            android:background="@drawable/rounded_corners_3"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/promptPresetKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or, Select Preset Security Key"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_mono"
+            android:layout_below="@id/edtNewKey"
+            android:layout_marginTop="50dp" />
+
+        <Spinner
+            android:id="@+id/selectPresetKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/promptPresetKey"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:background="@drawable/rounded_corners_3" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

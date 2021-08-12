@@ -13,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VCare">
+        <activity android:name=".SecurityKey"></activity>
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/network_security_config" />
@@ -23,6 +25,7 @@
         <activity android:name=".Menu" />
         <activity android:name=".AboutUs" />
         <activity android:name=".DailyQuote" />
+        <activity android:name=".Citations" />
         <activity android:name=".JournalPage" />
         <activity android:name=".SavedScreen" />
         <activity android:name=".RegisterPage" />
