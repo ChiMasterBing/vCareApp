@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VCare">
-        <activity android:name=".SecurityKey"></activity>
+        <activity android:name=".FriendsScreen"></activity>
+        <activity android:name=".SecurityKey" />
 
         <meta-data
             android:name="com.google.android.actions"

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".FriendsScreen">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_arrowback" />
+
+    <TextView
+        android:id="@+id/friendsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono"
+        android:text="Friends"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/onlineUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:layout_marginTop="120dp" >
+
+        <TextView
+            android:id="@+id/onlineUsersTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center_horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/onlineFriendsRecView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/offlineUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:layout_below="@+id/onlineUserLayout"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/offlineUsersTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offline"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center_horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/offlineFriendsRecView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addFriendsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offlineUserLayout"
+        android:layout_marginTop="30dp"
+        android:text="Add Friends"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_mono"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" />
+
+
+</RelativeLayout>

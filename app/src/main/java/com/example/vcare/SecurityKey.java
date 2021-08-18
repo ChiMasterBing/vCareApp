@@ -18,6 +18,11 @@ public class SecurityKey extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_security_key);
 
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+
         selectPresetKey = findViewById(R.id.selectPresetKey);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.securityQuestions, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
