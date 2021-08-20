@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -27,11 +26,14 @@ public class Mindfulness extends AppCompatActivity {
 
     private RecyclerView sbRecView;
     private RecyclerView mindfulRecView;
+    private RecyclerView dailyQRecView;
     private ImageButton back;
     private FirebaseDatabase mAuth;
     private DatabaseReference myRef;
+    private DatabaseReference myRefQ;
     private ArrayList<Article> sbArticles;
     private ArrayList<Article> mindfulArticles;
+    private ArrayList<Quote> quotes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,7 @@ public class Mindfulness extends AppCompatActivity {
 
         sbRecView = findViewById(R.id.sbArticlesRecView);
         mindfulRecView = findViewById(R.id.mArticlesRecView);
+        dailyQRecView = findViewById(R.id.quotesRecView);
 
         back = findViewById(R.id.backBtn);
 
@@ -58,20 +61,26 @@ public class Mindfulness extends AppCompatActivity {
 
         mAuth = FirebaseDatabase.getInstance();
         myRef = mAuth.getReference("Articles");
+        myRefQ = mAuth.getReference("Quotes");
 
         sbArticles = new ArrayList<>();
         mindfulArticles = new ArrayList<>();
+        quotes = new ArrayList<>();
 
-        //Rest should work for firebase
-        articleRecViewAdapter sbAdapter = new articleRecViewAdapter(this);
+        ArticleRecViewAdapter sbAdapter = new ArticleRecViewAdapter(this);
         sbAdapter.setArticles(sbArticles);
         sbRecView.setAdapter(sbAdapter);
         sbRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        articleRecViewAdapter mindfulAdapter = new articleRecViewAdapter(this);
+        ArticleRecViewAdapter mindfulAdapter = new ArticleRecViewAdapter(this);
         mindfulAdapter.setArticles(mindfulArticles);
         mindfulRecView.setAdapter(mindfulAdapter);
         mindfulRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        QuoteRecViewAdapter dailyQuoteAdapter = new QuoteRecViewAdapter(this);
+        dailyQuoteAdapter.setQuotes(quotes);
+        dailyQRecView.setAdapter(dailyQuoteAdapter);
+        dailyQRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         // Retrieve Article data from firebase
         myRef.addValueEventListener(new ValueEventListener() {
@@ -97,6 +106,21 @@ public class Mindfulness extends AppCompatActivity {
                 mindfulAdapter.setArticles(mindfulArticles);
 
             }
+            @Override
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
+                Toast.makeText(Mindfulness.this, error.toException().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        myRefQ.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Quote quote = snapshot.getValue(Quote.class);
+                    quotes.add(quote);
+                }
+            }
+
             @Override
             public void onCancelled(@NonNull @NotNull DatabaseError error) {
                 Toast.makeText(Mindfulness.this, error.toException().toString(), Toast.LENGTH_SHORT).show();

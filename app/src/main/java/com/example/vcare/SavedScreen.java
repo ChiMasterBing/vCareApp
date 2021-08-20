@@ -47,13 +47,13 @@ public class SavedScreen extends AppCompatActivity implements View.OnClickListen
                 finish();
                 break;
             case R.id.promptsButton:
-                System.out.println("Going to Prompts page.");
+                startActivity(new Intent(SavedScreen.this, SavedPrompts.class));
                 break;
             case R.id.articlesButton:
-                System.out.println("Going to Articles page.");
+                startActivity(new Intent(SavedScreen.this, SavedArticles.class));
                 break;
             case R.id.quotesButton:
-                startActivity(new Intent(SavedScreen.this, DailyQuote.class));
+                 startActivity(new Intent(SavedScreen.this, SavedQuotes.class));
                 finish();
                 break;
             case R.id.allSavedButton:

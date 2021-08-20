@@ -9,6 +9,10 @@ public class Prompt {
         this.text = text;
     }
 
+    public Prompt(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

@@ -8,6 +8,9 @@ public class Quote {
         this.quoteTxt = quoteTxt;
         this.author = author;
     }
+    public Quote(String quoteTxt){
+        this.quoteTxt = quoteTxt;
+    }
 
     public String getQuoteTxt() {
         return quoteTxt;

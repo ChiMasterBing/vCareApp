@@ -24,6 +24,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.VCare" >
+        <activity
+            android:name="com.example.vcare.SavedPrompts"
+            android:exported="true" />
+        <activity
+            android:name="com.example.vcare.SavedQuotes"
+            android:exported="true" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/network_security_config" />
@@ -38,16 +45,23 @@
         <activity android:name="com.example.vcare.SavedScreen" />
         <activity android:name="com.example.vcare.RegisterPage" />
         <activity android:name="com.example.vcare.ForgotPassPage" />
-        <activity android:name="com.example.vcare.LoginPage" >
+        <activity android:name="com.example.vcare.LoginPage" />
+        <activity android:name="com.example.vcare.AccountInfo" />
+        <activity android:name="com.example.vcare.AccountSettings" />
+        <activity android:name="com.example.vcare.HomeScreen" />
+        <activity android:name="com.example.vcare.Welcome" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.vcare.AccountInfo" />
-        <activity android:name="com.example.vcare.AccountSettings" />
-        <activity android:name="com.example.vcare.HomeScreen" />
+        <activity android:name="com.example.vcare.CalendarNoteActivity" />
+        <activity android:name="com.example.vcare.CalendarActivity" />
+        <activity android:name="com.example.vcare.JournalPrompts" />
+        <activity android:name="com.example.vcare.AllSaved" />
+        <activity android:name="com.example.vcare.SavedArticles" />
+        <activity android:name="com.example.vcare.CrisisHotlines" />
 
         <meta-data
             android:name="preloaded_fonts"

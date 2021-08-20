@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="18dp"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/leaf"/>
+
+    <TextView
+        android:id="@+id/welcomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="10dp"
+        android:text="Hello! Welcome to..."
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vcareTxt"
+        android:paddingHorizontal="10dp"
+        android:text="VCare"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:layout_below="@id/welcomeTxt"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vcareTxt"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corners_1"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="12dp"
+        android:text="sign in with email"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInBtn"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners_2"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="12dp"
+        android:text="create an account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/contWithBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createAccountBtn"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners_3"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="12dp"
+        android:text="continue with"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/contWithBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contWithBtn1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners_4"
+        android:fontFamily="@font/roboto_mono"
+        android:paddingHorizontal="18dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="12dp"
+        android:text="continue with"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+</RelativeLayout>

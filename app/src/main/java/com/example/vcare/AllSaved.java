@@ -15,6 +15,7 @@ public class AllSaved extends AppCompatActivity {
 
     private RecyclerView articlesRecView;
     private ImageButton btnBack;
+    ArrayList<SavedItem> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +24,10 @@ public class AllSaved extends AppCompatActivity {
 
         articlesRecView = findViewById(R.id.savedRecView);
 
-        ArrayList<SavedItem> items = new ArrayList<>();
-        items.add(new SavedItem("Saved 1"));
-        items.add(new SavedItem("Saved 2"));
-        items.add(new SavedItem("Saved 3"));
-        items.add(new SavedItem("Saved 4"));
-        items.add(new SavedItem("Saved 5"));
-        items.add(new SavedItem("Saved 6"));
-        items.add(new SavedItem("Saved 7"));
-        items.add(new SavedItem("Saved 8"));
-        items.add(new SavedItem("Saved 9"));
-        items.add(new SavedItem("Saved 10"));
-        items.add(new SavedItem("Saved 11"));
-        items.add(new SavedItem("Saved 12"));
+        items = new ArrayList<>();
+        for (int i=1; i<=12; i++){
+            items.add(new SavedItem("Saved " + i));
+        }
 
         SavedRecViewAdapter adapter = new SavedRecViewAdapter(this);
         adapter.setItem(items);

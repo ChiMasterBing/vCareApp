@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@color/white"
+    tools:context=".CalendarNoteActivity">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_arrowback"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:id="@+id/logo"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/leaf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addReminderLayout"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_below="@id/logo">
+
+        <TextView
+            android:id="@+id/addReminderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="start|top"
+            android:padding="10dp"
+            android:id="@+id/reminderInfo"
+            android:layout_below="@id/addReminderText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:id="@+id/reminderEdit"
+            android:layout_below="@id/reminderInfo"
+            android:layout_marginTop="5dp"
+            android:gravity="start|top"
+            android:padding="10dp"
+            android:inputType="textMultiLine"
+            android:background="@null"
+            android:fontFamily="@font/roboto_mono"
+            android:scrollbars="vertical"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/surveyLayout"
+        android:background="@color/colorPrimaryDark"
+        android:padding="15dp"
+        android:layout_below="@id/addReminderLayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surveyText"
+            android:padding="5dp"
+            android:text=""
+            android:fontFamily="@font/roboto_mono"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surveyResult"
+            android:padding="5dp"
+            android:text=""
+            android:fontFamily="@font/roboto_mono"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_below="@id/surveyText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surveyButton"
+            android:background="@color/color4"
+            android:text="Take Survey"
+            android:textAllCaps="false"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textSize="16sp"
+            android:layout_below="@id/surveyResult"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/emotionImage"
+            android:layout_below="@id/surveyButton"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

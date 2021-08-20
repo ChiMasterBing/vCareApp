@@ -7,9 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-
-import com.google.android.material.button.MaterialButton;
 
 public class HomeScreen extends AppCompatActivity implements View.OnClickListener {
     Button menu, journal, mindfulness, saved;
@@ -42,7 +39,7 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
                 System.out.println("Going to Settings page.");
                 break;
             case R.id.toJournalFromHome:
-                startActivity(new Intent(HomeScreen.this, JournalPage.class));
+                startActivity(new Intent(HomeScreen.this, JournalPrompts.class));
                 break;
             case R.id.toMindfulnessFromHome:
                 startActivity(new Intent(HomeScreen.this, Mindfulness.class));

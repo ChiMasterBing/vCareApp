@@ -28,6 +28,7 @@ public class DailyQuote extends AppCompatActivity {
     private TextView quoteTitle, quoteView;
     private FirebaseDatabase mAuth;
     private DatabaseReference myRef;
+    private String[] quoteInfo;
     boolean isChecked;
 
     @Override
@@ -43,6 +44,15 @@ public class DailyQuote extends AppCompatActivity {
 
         quoteTitle = findViewById(R.id.quoteTitle);
         quoteView = findViewById(R.id.quoteView);
+
+        Intent intent = getIntent();
+        quoteInfo = intent.getStringArrayExtra(QuoteRecViewAdapter.EXTRA_MESSAGE);
+        quoteTitle.setText(quoteInfo[1]);
+        quoteView.setText(quoteInfo[0]);
+
+        /*
+
+        Moved to mindfulness screen; selected quote from there is displayed here
 
         mAuth = FirebaseDatabase.getInstance();
         myRef = mAuth.getReference("Quotes");
@@ -61,6 +71,7 @@ public class DailyQuote extends AppCompatActivity {
                 Toast.makeText(DailyQuote.this, error.toException().toString(), Toast.LENGTH_SHORT).show();
             }
         });
+        */
 
         back = findViewById(R.id.backBtn);
         favorite = findViewById(R.id.favBtn);

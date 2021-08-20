@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class Menu extends AppCompatActivity {
 
-    private Button settings, aboutUs, accInfo, crisisHotline;
+    private Button settings, aboutUs, crisisHotline, friends, calendar;
     private ImageButton back;
 
     @Override
@@ -27,6 +27,8 @@ public class Menu extends AppCompatActivity {
         settings = findViewById(R.id.accountBtn);
         aboutUs = findViewById(R.id.aboutUsBtn);
         crisisHotline = findViewById(R.id.crisisHotlineBtn);
+        friends = findViewById(R.id.friendsBtn);
+        calendar = findViewById(R.id.calendarBtn);
         back = findViewById(R.id.backBtn);
 
         back.setOnClickListener(new View.OnClickListener(){
@@ -57,6 +59,22 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 startActivity(new Intent(Menu.this, CrisisHotlines.class)); //Switch to crisis hotline screen
+                finish();
+            }
+        });
+
+        friends.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //startActivity(new Intent(Menu.this, Friends.class));
+                //finish();
+            }
+        });
+
+        calendar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(Menu.this, CalendarActivity.class));
                 finish();
             }
         });

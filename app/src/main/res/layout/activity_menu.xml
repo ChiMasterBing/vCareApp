@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="18dp"
     tools:context=".Menu">
 
     <ImageButton
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="18dp"
         android:background="@null"
         android:src="@drawable/ic_arrowback" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:id="@+id/logo"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/leaf"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:paddingHorizontal="18dp">
+        android:paddingHorizontal="18dp"
+        android:layout_below="@id/logo">
 
         <TextView
             android:id="@+id/menuText"
@@ -37,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@id/menuText"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/rounded_corners_1"
             android:fontFamily="@font/roboto_mono"
             android:paddingHorizontal="18dp"
@@ -45,10 +55,10 @@
             android:paddingBottom="12dp"
             android:drawableRight="@drawable/account"
             android:text="account"
-            android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:gravity="start" />
 
         <Button
             android:id="@+id/crisisHotlineBtn"
@@ -63,10 +73,10 @@
             android:paddingBottom="12dp"
             android:drawableRight="@drawable/crisishotlines"
             android:text="crisis hotlines"
-            android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:gravity="start" />
 
         <Button
             android:id="@+id/aboutUsBtn"
@@ -81,11 +91,47 @@
             android:paddingBottom="12dp"
             android:drawableRight="@drawable/aboutus"
             android:text="about us"
-            android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:gravity="start" />
+
+        <!--Add images-->
+
+        <Button
+            android:id="@+id/friendsBtn"
+            android:layout_width="394dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/aboutUsBtn"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_4"
+            android:fontFamily="@font/roboto_mono"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:text="friends"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="start" />
+
+        <Button
+            android:id="@+id/calendarBtn"
+            android:layout_width="394dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/friendsBtn"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_1"
+            android:fontFamily="@font/roboto_mono"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:text="calendar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="start" />
 
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>
