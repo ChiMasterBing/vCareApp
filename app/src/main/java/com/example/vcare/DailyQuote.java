@@ -1,8 +1,5 @@
 package com.example.vcare;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +7,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,8 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Random;
-
 
 public class DailyQuote extends AppCompatActivity {
 
@@ -28,6 +26,8 @@ public class DailyQuote extends AppCompatActivity {
     private TextView quoteTitle, quoteView;
     private FirebaseDatabase mAuth;
     private DatabaseReference myRef;
+    private int quoteNum;
+    private User user;
     boolean isChecked;
 
     @Override
@@ -50,7 +50,7 @@ public class DailyQuote extends AppCompatActivity {
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                int quoteNum = (int)(Math.random() * snapshot.getChildrenCount()) + 1;
+                quoteNum = (int)(Math.random() * snapshot.getChildrenCount()) + 1;
                 Quote quote = snapshot.child("Quote " + quoteNum).getValue(Quote.class);
                 quoteTitle.setText(quote.getAuthor());
                 quoteView.setText(quote.getQuoteTxt());
@@ -73,17 +73,34 @@ public class DailyQuote extends AppCompatActivity {
             }
         });
 
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        FirebaseDatabase.getInstance().getReference("UserData")
+                .child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        user = snapshot.getValue(User.class);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+                        Toast.makeText(DailyQuote.this, "Something went wrong.", Toast.LENGTH_LONG).show();
+                    }
+                });
+
         favorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 if (isChecked) {
                     favorite.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24);
                     isChecked = false;
-                    System.out.println("Unsave the quote");
-                } else {
+                    //user.rmQuote(quoteNum);
+                    FirebaseDatabase.getInstance().getReference("UserData").child(uid).setValue(user);
+                }
+                else {
                     favorite.setBackgroundResource(R.drawable.ic_baseline_favorite_24);
                     isChecked = true;
-                    System.out.println("Save the quote");
+                    //user.addQuote(quoteNum);
+                    FirebaseDatabase.getInstance().getReference("UserData").child(uid).setValue(user);
                 }
             }
         });

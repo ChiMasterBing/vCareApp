@@ -1,17 +1,15 @@
 package com.example.vcare;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -32,17 +30,6 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_login_page);
 
         init();
-
-        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
-        String checkbox = preferences.getString("remember","");
-
-        if(checkbox.equals("true")){
-            Intent intent = new Intent(LoginPage.this, HomeScreen.class);
-            startActivity(intent);
-        }
-        else if(checkbox.equals("false")){
-            Toast.makeText(this,"Please Sign In", Toast.LENGTH_SHORT).show();
-        }
 
         login.setOnClickListener(this);
         forgot.setOnClickListener(this);

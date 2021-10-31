@@ -1,16 +1,17 @@
 package com.example.vcare;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.Sampler;
+import android.text.Html;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,12 +26,13 @@ import org.jetbrains.annotations.NotNull;
 public class AccountInfo extends AppCompatActivity implements View.OnClickListener {
     private ImageButton back;
     private ImageView pfp;
-    private TextView title, name, phone, email, pass;
+    private TextView title, name, email, pass;
     private String password;
     private boolean hidePass;
     private FirebaseUser user;
     private DatabaseReference ref;
     private String uid;
+    private Button signOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
         back.setOnClickListener(this);
         pfp.setOnClickListener(this);
         pass.setOnClickListener(this);
+        signOut.setOnClickListener(this);
     }
 
     private void init(){
@@ -49,21 +52,20 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
         pfp = findViewById(R.id.profilePicture);
         title = findViewById(R.id.infoTitle);
         name = findViewById(R.id.showName);
-        phone = findViewById(R.id.showPhone);
         email = findViewById(R.id.showEmail);
         pass = findViewById(R.id.showPass);
         user = FirebaseAuth.getInstance().getCurrentUser();
         ref = FirebaseDatabase.getInstance().getReference("UserData");
         uid = user.getUid();
+        signOut = findViewById(R.id.signOut);
         ref.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 User profile = snapshot.getValue(User.class);
                 if(profile != null){
-                    name.setText("Name: " + profile.first + " " + profile.last);
-                    phone.setText("#: " + profile.number);
-                    email.setText("Email: " + profile.email);
-                    password = profile.pass;
+                    name.setText(Html.fromHtml("<b>" + "Name: " + "</b>" + profile.getFirst() + " " + profile.getLast()));
+                    email.setText(Html.fromHtml("<b>" + "Email: " + "</b>" + profile.getEmail()));
+                    password = profile.getPass();
                 }
             }
 
@@ -72,7 +74,6 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
                 Toast.makeText(AccountInfo.this, "Something went wrong.", Toast.LENGTH_LONG).show();
             }
         });
-
         hidePass = true;
     }
 
@@ -80,7 +81,7 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v){
         switch(v.getId()){
             case R.id.backInfo:
-                startActivity(new Intent(AccountInfo.this, AccountSettings.class));
+                startActivity(new Intent(AccountInfo.this, Menu.class));
                 finish();
                 break;
             case R.id.profilePicture:
@@ -94,6 +95,10 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
                 else{
                     pass.setText("Password: (tap to show/hide)");
                 }
+                break;
+            case R.id.signOut:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(AccountInfo.this, LoginPage.class));
                 break;
             default:
                 System.out.println("This button is not yet registered.");

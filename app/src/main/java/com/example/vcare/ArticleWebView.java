@@ -1,7 +1,5 @@
 package com.example.vcare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -9,6 +7,11 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ArticleWebView extends AppCompatActivity {
 
@@ -44,7 +47,9 @@ public class ArticleWebView extends AppCompatActivity {
         favorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // need to implement saved webpages to firebase
+                String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                System.out.println("prressed");
+                System.out.println(FirebaseDatabase.getInstance().getReference("UserData").child(uid));
                 if (isChecked) {
                     favorite.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24);
                     isChecked = false;

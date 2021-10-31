@@ -1,16 +1,16 @@
 package com.example.vcare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Menu extends AppCompatActivity {
 
-    private Button settings, aboutUs, accInfo, crisisHotline;
+    private Button aboutUs, accInfo, crisisHotline;
     private ImageButton back;
 
     @Override
@@ -24,7 +24,7 @@ public class Menu extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        settings = findViewById(R.id.accountBtn);
+        accInfo = findViewById(R.id.accountBtn);
         aboutUs = findViewById(R.id.aboutUsBtn);
         crisisHotline = findViewById(R.id.crisisHotlineBtn);
         back = findViewById(R.id.backBtn);
@@ -37,10 +37,10 @@ public class Menu extends AppCompatActivity {
             }
         });
 
-        settings.setOnClickListener(new View.OnClickListener(){
+        accInfo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(Menu.this, AccountSettings.class)); //Switch to account screen
+                startActivity(new Intent(Menu.this, AccountInfo.class)); //Switch to account screen
                 finish();
             }
         });

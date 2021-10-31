@@ -27,7 +27,8 @@
         <activity android:name=".SavedScreen" />
         <activity android:name=".RegisterPage" />
         <activity android:name=".ForgotPassPage" />
-        <activity android:name=".LoginPage">
+        <activity android:name=".CrisisHotlines" />
+        <activity android:name=".LoginPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AccountInfo" />
-        <activity android:name=".AccountSettings" />
+        <activity android:name=".AllSaved" />
         <activity android:name=".HomeScreen" />
 
         <meta-data
