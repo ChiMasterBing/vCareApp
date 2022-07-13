@@ -1,14 +1,45 @@
 <resources>
     <string name="app_name">VCare</string>
     <string-array name="prompts">
-        <item>If you were a superhero, what would your superpower be?</item>
-        <item>This is prompt 1.1</item>
-        <item>This is prompt 1.2</item>
+        <item>How do I set boundaries and avoid absorbing someone else's emotions and stress? Boundaries are healthy and you should not hurt yourself to help someone emotionally</item>
+        <item>Do I forgive myself when I make a mistake? Remember, anyone can make a mistake because everyone is human :)</item>
+        <item>If I could do anything knowing I would not fail, what could I do?</item>
+        <item>If a genie granted me three wishes right now, what would I wish for?</item>
+        <item>What did I want to be when I grew up? In what ways did this vision change and in what way did this stay the same?</item>
+        <item>What goals do I hope to achieve in the short term?</item>
+        <item>What mistake did I learn the most from? </item>
+        <item>What scares me most about my future and why? What steps can I take to solve this?</item>
+        <item>What do you look forward to most in the future?</item>
+        <item>Imagine what your dream life would look like. What are some baby steps you can take to get closer to this life? Baby steps are still progress!</item>
+        <item>What new things would I like to learn? What do I believe is holding me back? Remember, growth is a process.</item>
+        <item>What is my goal today and how will I achieve it?</item>
+        <item>Have I ever accomplished a goal only to find out it wasn’t fulfilling for me? What kind of goal was it?</item>
+        <item>When was the last time I accomplished a goal that made me feel good for a long time? What kind of goal was it?</item>
     </string-array>
     <string-array name="prompts2">
-        <item>This is prompt 2.0</item>
-        <item>This is prompt 2.1</item>
-        <item>This is prompt 2.2</item>
+        <item>When was the last time I felt most like myself?</item>
+        <item>What am I still trying to prove about myself and why?</item>
+        <item>What is my heart telling me? What is my mind telling me? </item>
+        <item>Which one do I follow more: my heart or my head?</item>
+        <item>What am I trying not to think about?</item>
+        <item>How do I put myself first without feeling guilty? Remember, do not hurt yourself to help someone</item>
+        <item>When was the last time I felt really disappointed or hurt? What helped me overcome it?</item>
+        <item>When was the last time I solved a tough problem and what did I learn from it? Yes you have because you are determined :)</item>
+        <item>Do I find praise or criticism to be more motivating?</item>
+        <item>What was it that I never told someone and still regret not telling them?</item>
+        <item>How can I cope when things are not going my way?</item>
+        <item>Do I engage in negative self-talk? What are some ways I can practice self-love? You are worthy of love :)</item>
+        <item>How do I go about making difficult decisions in life?</item>
+        <item>Do I believe that the present is better than the past and why?</item>
+        <item>What are some of the anger and frustrations that I have been carrying? What are some ways I can solve them? Yes, you have the ability to solve them :)</item>
+        <item>Which emotion best represents me, and why?</item>
+        <item>Write a letter to who I feel hurt me the most. (You don’t have to give it to them, just release some of the feelings)</item>
+        <item>What can’t I live without? Does this have a positive or negative impact on my life? If negative, how can I work towards reducing or removing its presence in my life?</item>
+        <item>What was the topic, idea, or concept so engaging to me that I lost track of time? Why does it captivate me?</item>
+        <item>Do I speak up when I feel I’m not getting what I deserve?</item>
+        <item>How old or young do I feel inside? Why?</item>
+        <item>What am I most afraid of about life?</item>
+        <item>Do I have any regrets that I can’t let go of? Why? It’s ok to have them :)</item>
     </string-array>
     <string-array name="prompts3">
         <item>This is prompt 3.0</item>
