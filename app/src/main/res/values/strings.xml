@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">VCare</string>
     <string-array name="prompts">
-        <item>How do I set boundaries and avoid absorbing someone else's emotions and stress? Boundaries are healthy and you should not hurt yourself to help someone emotionally</item>
+        <item>How do I set boundaries and avoid absorbing someone else\'s emotions and stress? Boundaries are healthy and you should not hurt yourself to help someone emotionally</item>
         <item>Do I forgive myself when I make a mistake? Remember, anyone can make a mistake because everyone is human :)</item>
         <item>If I could do anything knowing I would not fail, what could I do?</item>
         <item>If a genie granted me three wishes right now, what would I wish for?</item>
@@ -13,7 +13,7 @@
         <item>Imagine what your dream life would look like. What are some baby steps you can take to get closer to this life? Baby steps are still progress!</item>
         <item>What new things would I like to learn? What do I believe is holding me back? Remember, growth is a process.</item>
         <item>What is my goal today and how will I achieve it?</item>
-        <item>Have I ever accomplished a goal only to find out it wasn’t fulfilling for me? What kind of goal was it?</item>
+        <item>Have I ever accomplished a goal only to find out it wasn\’t fulfilling for me? What kind of goal was it?</item>
         <item>When was the last time I accomplished a goal that made me feel good for a long time? What kind of goal was it?</item>
     </string-array>
     <string-array name="prompts2">
@@ -34,12 +34,12 @@
         <item>What are some of the anger and frustrations that I have been carrying? What are some ways I can solve them? Yes, you have the ability to solve them :)</item>
         <item>Which emotion best represents me, and why?</item>
         <item>Write a letter to who I feel hurt me the most. (You don’t have to give it to them, just release some of the feelings)</item>
-        <item>What can’t I live without? Does this have a positive or negative impact on my life? If negative, how can I work towards reducing or removing its presence in my life?</item>
+        <item>What can\’t I live without? Does this have a positive or negative impact on my life? If negative, how can I work towards reducing or removing its presence in my life?</item>
         <item>What was the topic, idea, or concept so engaging to me that I lost track of time? Why does it captivate me?</item>
-        <item>Do I speak up when I feel I’m not getting what I deserve?</item>
+        <item>Do I speak up when I feel I\’m not getting what I deserve?</item>
         <item>How old or young do I feel inside? Why?</item>
         <item>What am I most afraid of about life?</item>
-        <item>Do I have any regrets that I can’t let go of? Why? It’s ok to have them :)</item>
+        <item>Do I have any regrets that I can\’t let go of? Why? It\’s ok to have them :)</item>
     </string-array>
     <string-array name="prompts3">
         <item>This is prompt 3.0</item>
