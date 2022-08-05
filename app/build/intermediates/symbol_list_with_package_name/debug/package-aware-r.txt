@@ -1943,11 +1943,11 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backBtn
+id backAboutUs
+id backAccountSettings
 id backForgot
 id backInfo
 id backJournal
-id backRegister
 id backSaved
 id barrier
 id baseline
@@ -2066,7 +2066,7 @@ id expanded_menu
 id fade
 id favBtn
 id feedbackBox
-id feedbackButton
+id feedbackBtn
 id feedbackHeader
 id fill
 id fill_horizontal

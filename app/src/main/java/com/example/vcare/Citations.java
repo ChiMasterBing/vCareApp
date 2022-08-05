@@ -21,12 +21,12 @@ public class Citations extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        back = findViewById(R.id.backBtn);
+        back = findViewById(R.id.backAboutUs);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Citations.this, AboutUs.class));
+                //Return to AboutUs
                 finish();
             }
         });

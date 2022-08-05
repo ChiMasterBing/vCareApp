@@ -3,7 +3,6 @@ package com.example.vcare;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -41,7 +40,7 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
     }
 
     private void init(){
-        back = findViewById(R.id.backRegister);
+        back = findViewById(R.id.backAccountSettings);
         title = findViewById(R.id.registerTitle);
         first = findViewById(R.id.regFirst);
         last = findViewById(R.id.regLast);
@@ -55,8 +54,8 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.backRegister:
-                startActivity(new Intent(RegisterPage.this, LoginPage.class));
+            case R.id.backAccountSettings:
+                //Return to LoginPage
                 finish();
                 break;
             case R.id.registerConfirm:
@@ -118,8 +117,9 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
                                 @Override
                                 public void onComplete(@NonNull @NotNull Task<Void> task) {
                                     if(task.isSuccessful()){
-                                        startActivity(new Intent(RegisterPage.this, LoginPage.class));
-                                        //Toast.makeText(getApplicationContext(), "You have successfully registered", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(RegisterPage.this, "You have successfully registered", Toast.LENGTH_SHORT).show();
+                                        //Registration successful, return to LoginPage
+                                        finish();
                                     }
                                     else{
                                         Toast.makeText(RegisterPage.this, "Failed to register", Toast.LENGTH_SHORT).show();
@@ -132,6 +132,5 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 });
-
     }
 }

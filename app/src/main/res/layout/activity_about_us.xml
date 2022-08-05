@@ -9,7 +9,7 @@
     tools:context=".AboutUs">
 
     <ImageButton
-        android:id="@+id/backBtn"
+        android:id="@+id/backAboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -68,7 +68,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/feedbackButton"
+        android:id="@+id/feedbackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/feedbackBox"
@@ -85,7 +85,7 @@
         android:id="@+id/termsConditionsBtn"
         android:layout_width="match_parent"
         android:layout_height="24sp"
-        android:layout_below="@id/feedbackButton"
+        android:layout_below="@id/feedbackBtn"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corners_4"
         android:fontFamily="@font/roboto_mono"

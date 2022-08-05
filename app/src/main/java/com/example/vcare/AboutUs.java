@@ -10,11 +10,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AboutUs extends AppCompatActivity {
+public class AboutUs extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton back;
     private EditText feedback;
-    private Button feedbackButton, termsConditionsBtn, privacyBtn, citationsBtn;
+    private Button feedbackBtn, termsConditionsBtn, privacyBtn, citationsBtn;
     private static final int REQUEST_SEND_EMAIL = 1;
     String feedbackText;
 
@@ -28,21 +28,31 @@ public class AboutUs extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        back = findViewById(R.id.backBtn);
+        init();
 
-        back.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(AboutUs.this, Menu.class));
-                finish();
-            }
-        });
+        back.setOnClickListener(this);
+        feedbackBtn.setOnClickListener(this);
+        termsConditionsBtn.setOnClickListener(this);
+        privacyBtn.setOnClickListener(this);
+        citationsBtn.setOnClickListener(this);
+    }
 
+    private void init(){
+        back = findViewById(R.id.backAboutUs);
         feedback = findViewById(R.id.feedbackBox);
-        feedbackButton = findViewById(R.id.feedbackButton);
-        feedbackButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
+        feedbackBtn = findViewById(R.id.feedbackBtn);
+        termsConditionsBtn = findViewById(R.id.termsConditionsBtn);
+        privacyBtn = findViewById(R.id.privacyBtn);
+        citationsBtn = findViewById(R.id.citationsBtn);
+    }
+
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.backAboutUs:
+                //Return to Menu
+                finish();
+                break;
+            case R.id.feedbackBtn:
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"velbranchout.innovator@gmail.com"});
@@ -53,37 +63,21 @@ public class AboutUs extends AppCompatActivity {
                 } catch (android.content.ActivityNotFoundException ex) {
                     Toast.makeText(AboutUs.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
-
-        termsConditionsBtn = findViewById(R.id.termsConditionsBtn);
-        termsConditionsBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
+                break;
+            case R.id.termsConditionsBtn:
+                //TODO: Make Term and conditions
                 //startActivity(new Intent(AboutUsActivity.this, TermsConditionsActivity.class)); => Navigate to terms and conditions screen
-                //finish();
-
-            }
-        });
-
-        privacyBtn = findViewById(R.id.privacyBtn);
-        privacyBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
+                break;
+            case R.id.privacyBtn:
                 startActivity(new Intent(AboutUs.this, PrivacyPolicy.class));
-                finish();
-            }
-        });
-
-        citationsBtn = findViewById(R.id.citationsBtn);
-        citationsBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
+                break;
+            case R.id.citationsBtn:
                 startActivity(new Intent(AboutUs.this, Citations.class)); //=> Navigate to image citations screen
-                finish();
-            }
-        });
-
+                break;
+            default:
+                System.out.println("This button is not yet registered.");
+                break;
+        }
     }
 
     protected void onResume() {

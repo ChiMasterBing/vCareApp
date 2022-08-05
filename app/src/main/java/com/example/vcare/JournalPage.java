@@ -60,7 +60,7 @@ back button
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(JournalPage.this, HomeScreen.class));
+                //Return to HomeScreen
                 finish();
             }
         });

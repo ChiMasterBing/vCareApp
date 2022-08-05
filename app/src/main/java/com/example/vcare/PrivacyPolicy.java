@@ -21,7 +21,7 @@ public class PrivacyPolicy extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(PrivacyPolicy.this, AboutUs.class));
+                //Return to AboutUs
                 finish();
             }
         });

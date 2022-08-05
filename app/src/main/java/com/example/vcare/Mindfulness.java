@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -46,12 +44,12 @@ public class Mindfulness extends AppCompatActivity {
         sbRecView = findViewById(R.id.sbArticlesRecView);
         mindfulRecView = findViewById(R.id.mArticlesRecView);
 
-        back = findViewById(R.id.backBtn);
+        back = findViewById(R.id.backAboutUs);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(Mindfulness.this, HomeScreen.class));
+                //Return to HomeScreen
                 finish();
             }
         });

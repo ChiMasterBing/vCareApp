@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Menu extends AppCompatActivity {
+public class Menu extends AppCompatActivity implements View.OnClickListener{
 
     private Button settings, aboutUs, accInfo, crisisHotline;
     private ImageButton back;
@@ -24,43 +24,43 @@ public class Menu extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        settings = findViewById(R.id.accountBtn);
-        aboutUs = findViewById(R.id.aboutUsBtn);
-        crisisHotline = findViewById(R.id.crisisHotlineBtn);
-        back = findViewById(R.id.backBtn);
+        init();
 
-        back.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(Menu.this, HomeScreen.class));
-                finish();
-            }
-        });
-
-        settings.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(Menu.this, AccountSettings.class)); //Switch to account screen
-                finish();
-            }
-        });
-
-        aboutUs.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(Menu.this, AboutUs.class)); //Switch to about us screen
-                finish();
-            }
-        });
-
-        crisisHotline.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(Menu.this, CrisisHotlines.class)); //Switch to crisis hotline screen
-                finish();
-            }
-        });
+        back.setOnClickListener(this);
+        settings.setOnClickListener(this);
+        crisisHotline.setOnClickListener(this);
+        aboutUs.setOnClickListener(this);
     }
+
+    private void init(){
+        back = findViewById(R.id.backAboutUs);
+        settings = findViewById(R.id.accountBtn);
+        crisisHotline = findViewById(R.id.crisisHotlineBtn);
+        aboutUs = findViewById(R.id.aboutUsBtn);
+    }
+
+    @Override
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.backAboutUs:
+                //Return to HomeScreen
+                finish();
+                break;
+            case R.id.accountBtn:
+                startActivity(new Intent(Menu.this, AccountSettings.class)); //Switch to account screen
+                break;
+            case R.id.crisisHotlineBtn:
+                startActivity(new Intent(Menu.this, CrisisHotlines.class)); //Switch to crisis hotline screen
+                break;
+            case R.id.aboutUsBtn:
+                startActivity(new Intent(Menu.this, AboutUs.class)); //Switch to about us screen
+                break;
+            default:
+                System.out.println("This button is not yet registered.");
+                break;
+        }
+    }
+
     protected void onResume() {
         super.onResume();
         View decorView = getWindow().getDecorView();

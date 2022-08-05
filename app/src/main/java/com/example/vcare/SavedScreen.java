@@ -43,22 +43,22 @@ public class SavedScreen extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v){
         switch(v.getId()){
             case R.id.backSaved:
-                startActivity(new Intent(SavedScreen.this, HomeScreen.class));
+                //Return to HomeScreen
                 finish();
                 break;
             case R.id.promptsButton:
+                //TODO: Saved prompts
                 System.out.println("Going to Prompts page.");
                 break;
             case R.id.articlesButton:
+                //TODO: Saved articles
                 System.out.println("Going to Articles page.");
                 break;
             case R.id.quotesButton:
                 startActivity(new Intent(SavedScreen.this, DailyQuote.class));
-                finish();
                 break;
             case R.id.allSavedButton:
                 startActivity(new Intent(SavedScreen.this, AllSaved.class));
-                finish();
                 break;
             default:
                 System.out.println("This button is not yet registered.");

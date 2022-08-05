@@ -12,7 +12,7 @@
         android:id="@+id/thanksTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/backBtn"
+        android:layout_below="@id/backAboutUs"
         android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto_mono"
         android:paddingHorizontal="10dp"

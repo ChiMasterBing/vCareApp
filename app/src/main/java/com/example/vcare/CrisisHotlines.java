@@ -20,7 +20,7 @@ public class CrisisHotlines extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(CrisisHotlines.this, Menu.class));
+                //Return to Menu
                 finish();
             }
         });

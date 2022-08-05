@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/regPhone" />
 
     <ImageButton
-        android:id="@+id/backRegister"
+        android:id="@+id/backAccountSettings"
         android:layout_width="35dp"
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +128,7 @@
         app:drawableRightCompat="@drawable/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/backAccountSettings" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,7 +39,7 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         switch(v.getId()){
             case R.id.toMenuFromHome:
                 startActivity(new Intent(HomeScreen.this, Menu.class));
-                System.out.println("Going to Settings page.");
+                System.out.println("Going to Menu page.");
                 break;
             case R.id.toJournalFromHome:
                 startActivity(new Intent(HomeScreen.this, JournalPage.class));

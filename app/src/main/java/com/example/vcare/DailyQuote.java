@@ -19,8 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Random;
-
 
 public class DailyQuote extends AppCompatActivity {
 
@@ -62,13 +60,13 @@ public class DailyQuote extends AppCompatActivity {
             }
         });
 
-        back = findViewById(R.id.backBtn);
+        back = findViewById(R.id.backAboutUs);
         favorite = findViewById(R.id.favBtn);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(DailyQuote.this, SavedScreen.class));
+                //Return to SavedScreen
                 finish();
             }
         });

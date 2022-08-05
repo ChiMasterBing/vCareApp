@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\brayd\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\brayd\\.gradle\\caches\\transforms-2\\files-2.1\\999d0ab2f1d4f203c91e2a21da3072aa\\appcompat-1.3.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\lixin\\.gradle\\caches\\transforms-2\\files-2.1\\999d0ab2f1d4f203c91e2a21da3072aa\\appcompat-1.3.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

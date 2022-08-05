@@ -63,15 +63,15 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
     private void init(){
         account = findViewById(R.id.toAccountFromSettings);
         signOut = findViewById(R.id.signOut);
-        back = findViewById(R.id.backRegister);
+        back = findViewById(R.id.backAccountSettings);
         remember = findViewById(R.id.rememberMe);
     }
 
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.backRegister:
-                startActivity(new Intent(AccountSettings.this, HomeScreen.class));
+            case R.id.backAccountSettings:
+                //Return to Menu
                 finish();
                 break;
             case R.id.toAccountFromSettings:
@@ -84,7 +84,9 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("remember", "false");
                 editor.apply();
-                startActivity(new Intent(AccountSettings.this, LoginPage.class));
+                Intent intent = new Intent(getApplicationContext(), LoginPage.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 break;
             default:
                 System.out.println("This button is not yet registered.");

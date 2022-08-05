@@ -80,7 +80,7 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v){
         switch(v.getId()){
             case R.id.backInfo:
-                startActivity(new Intent(AccountInfo.this, AccountSettings.class));
+                //Return to AccountSettings
                 finish();
                 break;
             case R.id.profilePicture:

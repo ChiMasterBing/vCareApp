@@ -2,7 +2,6 @@ package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -29,14 +28,14 @@ public class ArticleWebView extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(weblink);
 
-        back = findViewById(R.id.backBtn);
+        back = findViewById(R.id.backAboutUs);
         favorite = findViewById(R.id.favBtn);
         isChecked = false;
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ArticleWebView.this, Mindfulness.class));
+                //Return to Mindfulness
                 finish();
             }
         });
