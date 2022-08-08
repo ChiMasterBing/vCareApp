@@ -1929,6 +1929,7 @@ id alertTitle
 id aligned
 id all
 id allSavedButton
+id allSavedTitle
 id always
 id animateToEnd
 id animateToStart
@@ -1944,10 +1945,13 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backAboutUs
+id backAccountInfo
 id backAccountSettings
+id backAllSaved
+id backArticleWebView
 id backForgot
-id backInfo
 id backJournal
+id backMindfulness
 id backSaved
 id barrier
 id baseline

@@ -44,7 +44,7 @@ public class Mindfulness extends AppCompatActivity {
         sbRecView = findViewById(R.id.sbArticlesRecView);
         mindfulRecView = findViewById(R.id.mArticlesRecView);
 
-        back = findViewById(R.id.backAboutUs);
+        back = findViewById(R.id.backMindfulness);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override

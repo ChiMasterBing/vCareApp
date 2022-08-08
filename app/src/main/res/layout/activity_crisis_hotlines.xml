@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CrisisHotlines"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:padding="18dp">
 
     <ImageButton
-        android:id="@+id/btnBack"
+        android:id="@+id/backCrisisHotlines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
         android:src="@drawable/ic_arrowback" />
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/crisisHotlinesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -26,18 +28,18 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/txtDetails"
+        android:id="@+id/crisisHotlinesTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtTitle"
+        android:layout_below="@id/crisisHotlinesTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:fontFamily="@font/roboto_mono"
+        android:gravity="center_horizontal"
         android:text="If you are in a crisis, the resources below can provide you with immediate help and support"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
         android:textSize="18dp" />
 
 
@@ -45,7 +47,7 @@
         app:cardCornerRadius="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/txtDetails"
+        android:layout_below="@id/crisisHotlinesTxt"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -65,8 +67,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/roboto_mono"
-                android:textColor="@color/black"
                 android:text="Emergency"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -89,8 +91,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_mono"
-                android:textColor="@color/black"
                 android:text="Suicide Prevention Lifeline"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -113,8 +115,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/roboto_mono"
-                android:textColor="@color/black"
                 android:text="Crisis Text Line"
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 

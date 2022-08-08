@@ -9,14 +9,14 @@
     tools:context=".DailyQuote">
 
     <ImageButton
-        android:id="@+id/backAboutUs"
+        android:id="@+id/backDailyQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
         android:src="@drawable/ic_arrowback" />
 
     <ImageButton
-        android:id="@+id/favBtn"
+        android:id="@+id/dailyQuoteFavoriteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

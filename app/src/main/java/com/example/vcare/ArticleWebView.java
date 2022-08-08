@@ -22,14 +22,14 @@ public class ArticleWebView extends AppCompatActivity {
         setContentView(R.layout.activity_article_web_view);
 
         weblink = getIntent().getStringExtra("article-url");
-        webView = findViewById(R.id.webView);
+        webView = findViewById(R.id.articleWebView);
 
         webView.setWebViewClient(new Callback());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(weblink);
 
-        back = findViewById(R.id.backAboutUs);
-        favorite = findViewById(R.id.favBtn);
+        back = findViewById(R.id.backArticleWebView);
+        favorite = findViewById(R.id.articleFavoriteBtn);
         isChecked = false;
 
         back.setOnClickListener(new View.OnClickListener() {

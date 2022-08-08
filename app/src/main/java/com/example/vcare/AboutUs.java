@@ -40,10 +40,10 @@ public class AboutUs extends AppCompatActivity implements View.OnClickListener{
     private void init(){
         back = findViewById(R.id.backAboutUs);
         feedback = findViewById(R.id.feedbackBox);
-        feedbackBtn = findViewById(R.id.feedbackBtn);
+        feedbackBtn = findViewById(R.id.feedbackSubmitBtn);
         termsConditionsBtn = findViewById(R.id.termsConditionsBtn);
-        privacyBtn = findViewById(R.id.privacyBtn);
-        citationsBtn = findViewById(R.id.citationsBtn);
+        privacyBtn = findViewById(R.id.privacyPolicyBtn);
+        citationsBtn = findViewById(R.id.imageCitationsBtn);
     }
 
     public void onClick(View v){
@@ -52,7 +52,7 @@ public class AboutUs extends AppCompatActivity implements View.OnClickListener{
                 //Return to Menu
                 finish();
                 break;
-            case R.id.feedbackBtn:
+            case R.id.feedbackSubmitBtn:
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"velbranchout.innovator@gmail.com"});
@@ -68,10 +68,10 @@ public class AboutUs extends AppCompatActivity implements View.OnClickListener{
                 //TODO: Make Term and conditions
                 //startActivity(new Intent(AboutUsActivity.this, TermsConditionsActivity.class)); => Navigate to terms and conditions screen
                 break;
-            case R.id.privacyBtn:
+            case R.id.privacyPolicyBtn:
                 startActivity(new Intent(AboutUs.this, PrivacyPolicy.class));
                 break;
-            case R.id.citationsBtn:
+            case R.id.imageCitationsBtn:
                 startActivity(new Intent(AboutUs.this, Citations.class)); //=> Navigate to image citations screen
                 break;
             default:

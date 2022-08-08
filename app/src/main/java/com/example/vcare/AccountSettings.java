@@ -61,7 +61,7 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
     }
 
     private void init(){
-        account = findViewById(R.id.toAccountFromSettings);
+        account = findViewById(R.id.accountInfoBtn);
         signOut = findViewById(R.id.signOut);
         back = findViewById(R.id.backAccountSettings);
         remember = findViewById(R.id.rememberMe);
@@ -74,7 +74,7 @@ public class AccountSettings extends AppCompatActivity implements View.OnClickLi
                 //Return to Menu
                 finish();
                 break;
-            case R.id.toAccountFromSettings:
+            case R.id.accountInfoBtn:
                 startActivity(new Intent(AccountSettings.this, AccountInfo.class));
                 System.out.println("Going to Account page.");
                 break;

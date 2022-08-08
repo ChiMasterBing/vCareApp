@@ -40,21 +40,21 @@ public class ForgotPassPage extends AppCompatActivity implements View.OnClickLis
     }
 
     private void init(){
-        back = findViewById(R.id.backForgot);
+        back = findViewById(R.id.backForgotPassword);
         title = findViewById(R.id.registerTitle);
         header = findViewById(R.id.forgotHeader);
         emailText = findViewById(R.id.emailReset);
-        reset = findViewById(R.id.reset);
+        reset = findViewById(R.id.resetBtn);
     }
 
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.backForgot:
+            case R.id.backForgotPassword:
                 startActivity(new Intent(ForgotPassPage.this, LoginPage.class));
                 finish();
                 break;
-            case R.id.reset:
+            case R.id.resetBtn:
                 reset();
                 break;
             default:

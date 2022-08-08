@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".Citations">
+    tools:context=".Citations"
+    android:padding="18dp">
 
     <ImageButton
-        android:id="@+id/backAboutUs"
+        android:id="@+id/backCitations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
         android:src="@drawable/ic_arrowback" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/citationsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -22,17 +23,16 @@
         android:fontFamily="@font/roboto_mono"
         android:text="Citations"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/citationsInfo"
-        android:layout_width="350dp"
-        android:layout_height="600dp"
-        android:layout_below="@+id/title"
-        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/citationsTitle"
         android:layout_marginTop="33dp"
         android:fontFamily="@font/roboto_mono"
-        android:text="Freepik-papyrus"/>
+        android:text="Freepik-papyrus" />
 
 
 </RelativeLayout>

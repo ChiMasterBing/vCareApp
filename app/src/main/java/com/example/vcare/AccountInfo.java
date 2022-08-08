@@ -3,9 +3,7 @@ package com.example.vcare;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.Sampler;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -45,9 +43,9 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
     }
 
     private void init(){
-        back = findViewById(R.id.backInfo);
-        pfp = findViewById(R.id.profilePicture);
-        title = findViewById(R.id.infoTitle);
+        back = findViewById(R.id.backAccountInfo);
+        pfp = findViewById(R.id.accountInfoProfilePicture);
+        title = findViewById(R.id.accountInfoTitle);
         name = findViewById(R.id.showName);
         phone = findViewById(R.id.showPhone);
         email = findViewById(R.id.showEmail);
@@ -79,11 +77,11 @@ public class AccountInfo extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.backInfo:
+            case R.id.backAccountInfo:
                 //Return to AccountSettings
                 finish();
                 break;
-            case R.id.profilePicture:
+            case R.id.accountInfoProfilePicture:
                 System.out.println("Profile picture pressed.");
                 break;
             case R.id.showPass:

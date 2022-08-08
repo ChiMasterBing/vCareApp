@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Menu">
+    tools:context=".Menu"
+    android:padding="18dp">
 
     <ImageButton
-        android:id="@+id/backAboutUs"
+        android:id="@+id/backMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="18dp"
         android:background="@null"
         android:src="@drawable/ic_arrowback" />
 
@@ -22,28 +22,28 @@
         android:paddingHorizontal="18dp">
 
         <TextView
-            android:id="@+id/menuText"
+            android:id="@+id/menuTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/droid_sans_mono"
             android:text="Menu"
-            android:textStyle="bold"
-            android:textSize="45dp" />
+            android:textSize="45dp"
+            android:textStyle="bold" />
 
         <!-- Add images to buttons-->
         <Button
-            android:id="@+id/accountBtn"
+            android:id="@+id/accountSettingsBtn"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_below="@id/menuText"
+            android:layout_below="@id/menuTitle"
             android:layout_marginTop="56dp"
             android:background="@drawable/rounded_corners_1"
+            android:drawableRight="@drawable/account"
             android:fontFamily="@font/roboto_mono"
             android:paddingHorizontal="18dp"
             android:paddingTop="20dp"
             android:paddingBottom="12dp"
-            android:drawableRight="@drawable/account"
             android:text="account"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
@@ -51,17 +51,17 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/crisisHotlineBtn"
+            android:id="@+id/crisisHotlinesBtn"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_below="@id/accountBtn"
+            android:layout_below="@id/accountSettingsBtn"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corners_2"
+            android:drawableRight="@drawable/crisishotlines"
             android:fontFamily="@font/roboto_mono"
             android:paddingHorizontal="18dp"
             android:paddingTop="20dp"
             android:paddingBottom="12dp"
-            android:drawableRight="@drawable/crisishotlines"
             android:text="crisis hotlines"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
@@ -72,14 +72,14 @@
             android:id="@+id/aboutUsBtn"
             android:layout_width="394dp"
             android:layout_height="80dp"
-            android:layout_below="@id/crisisHotlineBtn"
+            android:layout_below="@id/crisisHotlinesBtn"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corners_3"
+            android:drawableRight="@drawable/aboutus"
             android:fontFamily="@font/roboto_mono"
             android:paddingHorizontal="18dp"
             android:paddingTop="20dp"
             android:paddingBottom="12dp"
-            android:drawableRight="@drawable/aboutus"
             android:text="about us"
             android:textAlignment="viewStart"
             android:textAllCaps="false"

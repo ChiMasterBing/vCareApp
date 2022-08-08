@@ -3,7 +3,6 @@ package com.example.vcare;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -60,8 +59,8 @@ public class DailyQuote extends AppCompatActivity {
             }
         });
 
-        back = findViewById(R.id.backAboutUs);
-        favorite = findViewById(R.id.favBtn);
+        back = findViewById(R.id.backDailyQuote);
+        favorite = findViewById(R.id.dailyQuoteFavoriteBtn);
 
         back.setOnClickListener(new View.OnClickListener(){
             @Override

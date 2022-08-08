@@ -1928,6 +1928,7 @@ int id alertTitle 0x7f0a004d
 int id aligned 0x7f0a004e
 int id all 0x7f0a004f
 int id allSavedButton 0x7f0a0050
+int id allSavedTitle 0x7f0a0256
 int id always 0x7f0a0051
 int id animateToEnd 0x7f0a0052
 int id animateToStart 0x7f0a0053
@@ -1943,10 +1944,13 @@ int id autoComplete 0x7f0a005c
 int id autoCompleteToEnd 0x7f0a005d
 int id autoCompleteToStart 0x7f0a005e
 int id backAboutUs 0x7f0a0253
+int id backAccountInfo 0x7f0a0257
 int id backAccountSettings 0x7f0a0254
+int id backAllSaved 0x7f0a0258
+int id backArticleWebView 0x7f0a025a
 int id backForgot 0x7f0a0060
-int id backInfo 0x7f0a0061
 int id backJournal 0x7f0a0062
+int id backMindfulness 0x7f0a0259
 int id backSaved 0x7f0a0064
 int id barrier 0x7f0a0065
 int id baseline 0x7f0a0066
