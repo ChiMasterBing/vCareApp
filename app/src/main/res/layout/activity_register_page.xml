@@ -23,7 +23,7 @@
         android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/roboto_mono_thin"
         android:gravity="center"
         android:text="vCare"

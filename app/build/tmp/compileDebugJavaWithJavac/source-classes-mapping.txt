@@ -1,26 +1,7 @@
-com/example/vcare/Article.java
- com.example.vcare.Article
-com/example/vcare/Prompt.java
- com.example.vcare.Prompt
-com/example/vcare/Quote.java
- com.example.vcare.Quote
-com/example/vcare/SavedItem.java
- com.example.vcare.SavedItem
-com/example/vcare/BuildConfig.java
- com.example.vcare.BuildConfig
-com/example/vcare/User.java
- com.example.vcare.User
-com/example/vcare/articleRecViewAdapter.java
- com.example.vcare.articleRecViewAdapter
- com.example.vcare.articleRecViewAdapter$1
- com.example.vcare.articleRecViewAdapter$ViewHolder
 com/example/vcare/QuoteRecViewAdapter.java
  com.example.vcare.QuoteRecViewAdapter
  com.example.vcare.QuoteRecViewAdapter$1
  com.example.vcare.QuoteRecViewAdapter$ViewHolder
-com/example/vcare/SavedRecViewAdapter.java
- com.example.vcare.SavedRecViewAdapter
- com.example.vcare.SavedRecViewAdapter$ViewHolder
 com/example/vcare/CrisisHotlines.java
  com.example.vcare.CrisisHotlines
  com.example.vcare.CrisisHotlines$1
@@ -33,49 +14,68 @@ com/example/vcare/AllSaved.java
 com/example/vcare/LoginPage.java
  com.example.vcare.LoginPage
  com.example.vcare.LoginPage$1
-com/example/vcare/ArticleWebView.java
- com.example.vcare.ArticleWebView
- com.example.vcare.ArticleWebView$1
- com.example.vcare.ArticleWebView$2
- com.example.vcare.ArticleWebView$Callback
+com/example/vcare/User.java
+ com.example.vcare.User
 com/example/vcare/Loading.java
  com.example.vcare.Loading
 com/example/vcare/ThanksSubmit.java
  com.example.vcare.ThanksSubmit
  com.example.vcare.ThanksSubmit$1
+com/example/vcare/Article.java
+ com.example.vcare.Article
 com/example/vcare/DailyQuote.java
  com.example.vcare.DailyQuote
  com.example.vcare.DailyQuote$1
  com.example.vcare.DailyQuote$2
  com.example.vcare.DailyQuote$3
-com/example/vcare/ForgotPassPage.java
- com.example.vcare.ForgotPassPage
- com.example.vcare.ForgotPassPage$1
 com/example/vcare/PrivacyPolicy.java
  com.example.vcare.PrivacyPolicy
  com.example.vcare.PrivacyPolicy$1
 com/example/vcare/JournalPage.java
  com.example.vcare.JournalPage
  com.example.vcare.JournalPage$1
-com/example/vcare/SavedScreen.java
- com.example.vcare.SavedScreen
 com/example/vcare/AccountInfo.java
  com.example.vcare.AccountInfo
  com.example.vcare.AccountInfo$1
+com/example/vcare/Mindfulness.java
+ com.example.vcare.Mindfulness
+ com.example.vcare.Mindfulness$1
+ com.example.vcare.Mindfulness$2
+com/example/vcare/AboutUs.java
+ com.example.vcare.AboutUs
+com/example/vcare/Quote.java
+ com.example.vcare.Quote
+com/example/vcare/SavedItem.java
+ com.example.vcare.SavedItem
+com/example/vcare/articleRecViewAdapter.java
+ com.example.vcare.articleRecViewAdapter
+ com.example.vcare.articleRecViewAdapter$1
+ com.example.vcare.articleRecViewAdapter$ViewHolder
+com/example/vcare/Prompt.java
+ com.example.vcare.Prompt
+com/example/vcare/SavedRecViewAdapter.java
+ com.example.vcare.SavedRecViewAdapter
+ com.example.vcare.SavedRecViewAdapter$ViewHolder
+com/example/vcare/BuildConfig.java
+ com.example.vcare.BuildConfig
+com/example/vcare/ArticleWebView.java
+ com.example.vcare.ArticleWebView
+ com.example.vcare.ArticleWebView$1
+ com.example.vcare.ArticleWebView$2
+ com.example.vcare.ArticleWebView$Callback
+com/example/vcare/ForgotPassPage.java
+ com.example.vcare.ForgotPassPage
+ com.example.vcare.ForgotPassPage$1
+com/example/vcare/SavedScreen.java
+ com.example.vcare.SavedScreen
 com/example/vcare/Citations.java
  com.example.vcare.Citations
  com.example.vcare.Citations$1
 com/example/vcare/HomeScreen.java
  com.example.vcare.HomeScreen
-com/example/vcare/Mindfulness.java
- com.example.vcare.Mindfulness
- com.example.vcare.Mindfulness$1
- com.example.vcare.Mindfulness$2
 com/example/vcare/RegisterPage.java
  com.example.vcare.RegisterPage
  com.example.vcare.RegisterPage$1
  com.example.vcare.RegisterPage$1$1
-com/example/vcare/AboutUs.java
- com.example.vcare.AboutUs
 com/example/vcare/Menu.java
  com.example.vcare.Menu

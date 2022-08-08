@@ -188,12 +188,12 @@
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\drawable\\account.png"
     },
     {
-        "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_settings_24.png.flat",
