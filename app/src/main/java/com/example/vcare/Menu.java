@@ -33,23 +33,23 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
     }
 
     private void init(){
-        back = findViewById(R.id.backAboutUs);
-        settings = findViewById(R.id.accountBtn);
-        crisisHotline = findViewById(R.id.crisisHotlineBtn);
+        back = findViewById(R.id.backMenu);
+        settings = findViewById(R.id.accountSettingsBtn);
+        crisisHotline = findViewById(R.id.crisisHotlinesBtn);
         aboutUs = findViewById(R.id.aboutUsBtn);
     }
 
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.backAboutUs:
+            case R.id.backMenu:
                 //Return to HomeScreen
                 finish();
                 break;
-            case R.id.accountBtn:
+            case R.id.accountSettingsBtn:
                 startActivity(new Intent(Menu.this, AccountSettings.class)); //Switch to account screen
                 break;
-            case R.id.crisisHotlineBtn:
+            case R.id.crisisHotlinesBtn:
                 startActivity(new Intent(Menu.this, CrisisHotlines.class)); //Switch to crisis hotline screen
                 break;
             case R.id.aboutUsBtn:

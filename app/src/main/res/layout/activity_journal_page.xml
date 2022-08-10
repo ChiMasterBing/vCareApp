@@ -6,7 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/journal"
-    tools:context=".JournalPage">
+    tools:context=".JournalPage"
+    android:padding="18dp">
+
+    <ImageButton
+        android:id="@+id/backJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:srcCompat="@drawable/ic_arrowback" />
 
     <LinearLayout
         android:id="@+id/ActionBarProductInfo"
@@ -19,11 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/backJournal"
-            android:layout_width="35dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
     </LinearLayout>
 
     <HorizontalScrollView

@@ -2,7 +2,6 @@ package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -16,7 +15,7 @@ public class PrivacyPolicy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privacy_policy);
 
-        btnBack = findViewById(R.id.btnBack);
+        btnBack = findViewById(R.id.backPrivacyPolicy);
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override

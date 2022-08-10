@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class AllSaved extends AppCompatActivity {
 
     private RecyclerView articlesRecView;
-    private ImageButton btnBack;
+    private ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +43,9 @@ public class AllSaved extends AppCompatActivity {
         articlesRecView.setAdapter(adapter);
         articlesRecView.setLayoutManager(new GridLayoutManager(this,3));
 
-        btnBack = findViewById(R.id.btnBack);
+        back = findViewById(R.id.backAllSaved);
 
-        btnBack.setOnClickListener(new View.OnClickListener(){
+        back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 //Return to SavedScreen

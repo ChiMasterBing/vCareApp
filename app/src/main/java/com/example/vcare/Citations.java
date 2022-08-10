@@ -2,7 +2,6 @@ package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,7 +20,7 @@ public class Citations extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        back = findViewById(R.id.backAboutUs);
+        back = findViewById(R.id.backCitations);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

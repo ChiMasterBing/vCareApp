@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
-
 public class SavedScreen extends AppCompatActivity implements View.OnClickListener{
     ImageButton back;
     TextView title;
@@ -32,7 +30,7 @@ public class SavedScreen extends AppCompatActivity implements View.OnClickListen
 
     private void init(){
         back = findViewById(R.id.backSaved);
-        title = findViewById(R.id.savedText);
+        title = findViewById(R.id.savedTitle);
         prompts = findViewById(R.id.promptsButton);
         articles = findViewById(R.id.articlesButton);
         quotes = findViewById(R.id.quotesButton);

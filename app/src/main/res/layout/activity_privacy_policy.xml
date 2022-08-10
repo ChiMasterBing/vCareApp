@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrivacyPolicy"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:padding="18dp">
 
     <ImageButton
-        android:id="@+id/btnBack"
+        android:id="@+id/backPrivacyPolicy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrowback"/>
+        android:background="@null"
+        android:src="@drawable/ic_arrowback" />
 
     <TextView
         android:id="@+id/title"

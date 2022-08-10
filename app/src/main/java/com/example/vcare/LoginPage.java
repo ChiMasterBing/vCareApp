@@ -52,10 +52,10 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
     }
 
     private void init(){
-        login = findViewById(R.id.loginButton);
+        login = findViewById(R.id.loginBtn);
         title = findViewById(R.id.loginTitle);
-        forgot = findViewById(R.id.forgotPass);
-        register = findViewById(R.id.register);
+        forgot = findViewById(R.id.forgotPasswordBtn);
+        register = findViewById(R.id.registerBtn);
         email = findViewById(R.id.loginEmail);
         password = findViewById(R.id.loginPassword);
     }
@@ -63,14 +63,14 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.loginButton:
+            case R.id.loginBtn:
                 login();
                 break;
-            case R.id.forgotPass:
+            case R.id.forgotPasswordBtn:
                 startActivity(new Intent(LoginPage.this, ForgotPassPage.class));
                 System.out.println("Going to Forgot Password page.");
                 break;
-            case R.id.register:
+            case R.id.registerBtn:
                 startActivity(new Intent(LoginPage.this, RegisterPage.class));
                 System.out.println("Going to Register page.");
                 break;

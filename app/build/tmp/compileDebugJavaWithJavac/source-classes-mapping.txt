@@ -41,8 +41,8 @@ com/example/vcare/Mindfulness.java
  com.example.vcare.Mindfulness
  com.example.vcare.Mindfulness$1
  com.example.vcare.Mindfulness$2
-com/example/vcare/HomeScreen.java
- com.example.vcare.HomeScreen
+com/example/vcare/AboutUs.java
+ com.example.vcare.AboutUs
 com/example/vcare/Quote.java
  com.example.vcare.Quote
 com/example/vcare/SavedItem.java
@@ -71,11 +71,11 @@ com/example/vcare/SavedScreen.java
 com/example/vcare/Citations.java
  com.example.vcare.Citations
  com.example.vcare.Citations$1
+com/example/vcare/HomeScreen.java
+ com.example.vcare.HomeScreen
 com/example/vcare/RegisterPage.java
  com.example.vcare.RegisterPage
  com.example.vcare.RegisterPage$1
  com.example.vcare.RegisterPage$1$1
-com/example/vcare/AboutUs.java
- com.example.vcare.AboutUs
 com/example/vcare/Menu.java
  com.example.vcare.Menu

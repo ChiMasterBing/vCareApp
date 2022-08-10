@@ -68,7 +68,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/feedbackBtn"
+        android:id="@+id/feedbackSubmitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/feedbackBox"
@@ -85,7 +85,7 @@
         android:id="@+id/termsConditionsBtn"
         android:layout_width="match_parent"
         android:layout_height="24sp"
-        android:layout_below="@id/feedbackBtn"
+        android:layout_below="@id/feedbackSubmitBtn"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corners_4"
         android:fontFamily="@font/roboto_mono"
@@ -97,7 +97,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/privacyBtn"
+        android:id="@+id/privacyPolicyBtn"
         android:layout_width="match_parent"
         android:layout_height="24sp"
         android:layout_below="@id/termsConditionsBtn"
@@ -112,10 +112,10 @@
         android:textSize="14sp" />0
 
     <Button
-        android:id="@+id/citationsBtn"
+        android:id="@+id/imageCitationsBtn"
         android:layout_width="match_parent"
         android:layout_height="24sp"
-        android:layout_below="@id/privacyBtn"
+        android:layout_below="@id/privacyPolicyBtn"
         android:layout_marginTop="10dp"
         android:background="@drawable/rounded_corners_4"
         android:fontFamily="@font/roboto_mono"
