@@ -25,6 +25,7 @@ import java.util.Random;
 public class JournalPage extends AppCompatActivity {
     private String[] prompts;
     private String[] quotes;
+    private TypedArray images;
 
     private RecyclerView JournalRecView;
     private int numPrompts = 3;
@@ -54,6 +55,7 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
 
         //TODO Implement images into RecView
         //Could try multi-view recView or alternatively allowing the user to select what type of journaling they want
+        //TODO Issue: Edge views can't snap to center
         JournalRecView = findViewById(R.id.journalRecView);
 
         JournalAdapter journalAdapter = new JournalAdapter(this, getRandomEntries(numPrompts, numQuotes));
@@ -103,5 +105,6 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
     private void init() {
         prompts = getResources().getStringArray(R.array.prompts);
         quotes = getResources().getStringArray(R.array.quotes);
+        images = getResources().obtainTypedArray(R.array.imgPrompts);
     }
 }

@@ -6,6 +6,8 @@ public class JournalEntry {
     private String txt;
     private String response;
 
+    //TODO make subclass for each type since formatting will be different and need different properties
+    //Prompt, Quote, Image
     public JournalEntry(String type, String text) {
         entryType = type;
         txt = text;
