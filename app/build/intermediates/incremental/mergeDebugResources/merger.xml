@@ -6778,9 +6778,6 @@
         </item>
     </string-array></file><file path="C:\Users\lixin\Documents\GitHub\vCareApp\app\src\main\res\values\ic_launcher_background.xml" qualifiers=""><color name="ic_launcher_background">#3DDC84</color></file><file path="C:\Users\lixin\Documents\GitHub\vCareApp\app\src\main\res\values\images.xml" qualifiers=""><array name="imgPrompts">
         <item>@drawable/flower</item>
-    </array><array name="imgPrompts2">
-        <item>@drawable/ic_launcher_foreground</item>
-    </array><array name="imgPrompts3">
         <item>@drawable/ic_launcher_background</item>
         <item>@drawable/ic_launcher_foreground</item>
     </array></file><file path="C:\Users\lixin\Documents\GitHub\vCareApp\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">

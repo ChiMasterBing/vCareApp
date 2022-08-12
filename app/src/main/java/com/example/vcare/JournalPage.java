@@ -25,10 +25,10 @@ import java.util.Random;
 public class JournalPage extends AppCompatActivity {
     private String[] prompts;
     private String[] quotes;
-    private ImageView big;
 
     private RecyclerView JournalRecView;
     private int numPrompts = 3;
+    private int numQuotes = 3;
 /*TODO:
 Color scheme has been finalized by CD team we are using color codes BEE3DB, 89B0AE, EC9192, and FFD6BA.
 Text should be Roboto Mono for now. Please make sure to update your screen(s) accordingly.
@@ -52,11 +52,11 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
             }
         });
 
-        //TODO Implement quotes and images into RecView
+        //TODO Implement images into RecView
         //Could try multi-view recView or alternatively allowing the user to select what type of journaling they want
         JournalRecView = findViewById(R.id.journalRecView);
 
-        JournalAdapter journalAdapter = new JournalAdapter(this, getRandomEntries(numPrompts));
+        JournalAdapter journalAdapter = new JournalAdapter(this, getRandomEntries(numPrompts, numQuotes));
 
         JournalRecView.setAdapter(journalAdapter);
         JournalRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
@@ -64,7 +64,7 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
         helper.attachToRecyclerView(JournalRecView);
     }
 
-    private ArrayList<JournalEntry> getRandomEntries(int num){
+    private ArrayList<JournalEntry> getRandomEntries(int numPrompts, int numQuotes){
         //Eventually need a way to not reuse prompts
 
         //Randomly select prompts from prompts String[] by using a shuffled list
@@ -75,7 +75,7 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
         }
         Collections.shuffle(list);
 
-        for(int i = 0; i < num; i++){
+        for(int i = 0; i < numPrompts; i++){
             selectedEntries.add(new JournalEntry("prompt", prompts[list.get(i)]));
         }
 
@@ -86,29 +86,21 @@ Saving prompts/responses in 2 ways: 1. connect it to the account, and 2. have it
         }
         Collections.shuffle(list);
 
-        for(int i = 0; i < num; i++){
+        for(int i = 0; i < numQuotes; i++){
             selectedEntries.add(new JournalEntry("quote", quotes[list.get(i)]));
         }
 
         return selectedEntries;
     }
 
-    public void onImg1Clicked(View view) {
-        big = findViewById(R.id.imageBig);
-        //big.setBackground(img1.getBackground());
-
-    }
-
     public void onEditTextClicked(View view) {
         Toast.makeText(this, "Like the prompt? Tap it to save.", Toast.LENGTH_SHORT).show();
     }
     public void onSaveBtnClicked(View view) {
-
+        //TODO allow for saving
     }
 
     private void init() {
-
-        //TODO Refine and implement prompt class to allow for prompts and answers to be saved
         prompts = getResources().getStringArray(R.array.prompts);
         quotes = getResources().getStringArray(R.array.quotes);
     }

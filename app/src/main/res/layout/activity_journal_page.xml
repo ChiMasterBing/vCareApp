@@ -26,27 +26,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageBig"
         app:layout_constraintTop_toBottomOf="@+id/backJournal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="10dp"
         />
 
-    <ImageView
-        android:id="@+id/imageBig"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="105dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/journalRecView" />
-
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="0dp"
-        android:layout_height="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
         android:gravity="start|top"
@@ -58,14 +46,16 @@
         app:layout_constraintTop_toBottomOf="@+id/journalRecView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/journalSaveResponse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onSaveBtnClicked"
         android:text="Save Response"
         app:backgroundTint="#BEE3DB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        android:onClick="onSaveBtnClicked"/>
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

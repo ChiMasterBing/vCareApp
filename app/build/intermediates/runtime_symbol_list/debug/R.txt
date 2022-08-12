@@ -62,8 +62,6 @@ int array com_google_android_gms_fonts_certs 0x7f030000
 int array com_google_android_gms_fonts_certs_dev 0x7f030001
 int array com_google_android_gms_fonts_certs_prod 0x7f030002
 int array imgPrompts 0x7f030003
-int array imgPrompts2 0x7f030004
-int array imgPrompts3 0x7f030005
 int array preloaded_fonts 0x7f030006
 int array prompts 0x7f030007
 int array quotes 0x7f03000a
@@ -1971,7 +1969,6 @@ int id browser_actions_menu_item_text 0x7f0a007c
 int id browser_actions_menu_items 0x7f0a007d
 int id browser_actions_menu_view 0x7f0a007e
 int id btn_holder 0x7f0a007f
-int id button 0x7f0a0080
 int id buttonPanel 0x7f0a0081
 int id button_continue 0x7f0a0082
 int id button_create 0x7f0a0083
@@ -2129,6 +2126,7 @@ int id italic 0x7f0a011e
 int id item_touch_helper_previous_elevation 0x7f0a011f
 int id journalBtn 0x7f0a0120
 int id journalRecView 0x7f0a0121
+int id journalSaveResponse 0x7f0a0262
 int id jumpToEnd 0x7f0a0122
 int id jumpToStart 0x7f0a0123
 int id labelGroup 0x7f0a0124
