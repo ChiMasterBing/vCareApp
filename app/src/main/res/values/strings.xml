@@ -13,7 +13,7 @@
         <item>Imagine what your dream life would look like. What are some baby steps you can take to get closer to this life? Baby steps are still progress!</item>
         <item>What new things would I like to learn? What do I believe is holding me back? Remember, growth is a process.</item>
         <item>What is my goal today and how will I achieve it?</item>
-        <item>Have I ever accomplished a goal only to find out it wasn\’t fulfilling for me? What kind of goal was it?</item>
+        <item>Have I ever accomplished a goal only to find out it wasn\'t fulfilling for me? What kind of goal was it?</item>
         <item>When was the last time I accomplished a goal that made me feel good for a long time? What kind of goal was it?</item>
     </string-array>
     <string-array name="prompts2">
@@ -42,24 +42,95 @@
         <item>Do I have any regrets that I can\’t let go of? Why? It\’s ok to have them :)</item>
     </string-array>
     <string-array name="prompts3">
-        <item>This is prompt 3.0</item>
-        <item>This is prompt 3.1</item>
-        <item>This is prompt 3.2</item>
+        <item>What is a moment I think back to for comfort?</item>
+        <item>How do I show empathy or that I care for others?</item>
+        <item>What strengths/traits do I value the most in a friendship?</item>
+        <item>What part of your day do you most look forward to?</item>
+        <item>Which part of your day causes you the most stress or discouragement? How can you overcome it? </item>
+        <item>Write a letter of forgiveness to someone (you don't need to give it to them).</item>
+        <item>What was an act of yours where you put others before yourself?</item>
+        <item>Write a letter to yourself on a bad day. Bad days happen and that's ok! What would you say to yourself on one of those days?</item>
+        <item>What is a bad habit that I have? It\’s ok to have them as everyone does :)</item>
+        <item>What is a bad habit that I have overcome?</item>
+        <item>What are some of my strengths?</item>
+        <item>How would you describe a day that would be perfect to you?</item>
+        <item>What are three short term goals I have?</item>
+        <item>What is the place I feel happiest?</item>
+        <item>What is the place I feel least happy? Try to identify why you feel this way here.</item>
     </string-array>
     <string-array name="quotes">
-        <item>This is quote 1.0</item>
-        <item>This is quote 1.1</item>
-        <item>This is quote 1.2</item>
+        <item>"Success is not final; failure is not fatal: It is the courage to continue that counts." — Winston S. Churchill</item>
+        <item>“Don’t let yesterday take up too much of today.” — Will Rogers</item>
+        <item>“When we strive to become better than we are, everything around us becomes better too.” — Paulo Coelho</item>
+        <item>“Opportunity is missed by most people because it is dressed in overalls and looks like work.” — Thomas Edison</item>
+        <item>“Setting goals is the first step in turning the invisible into the visible.” — Tony Robbins</item>
+        <item>“The most difficult thing is the decision to act, the rest is merely tenacity.” —Amelia Earhart</item>
+        <item>“The most difficult thing is the decision to act, the rest is merely tenacity.” —Amelia Earhart</item>
+        <item>“Remember, teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.” — Patrick Lencioni</item>
+        <item>“I invite everyone to choose forgiveness rather than division, teamwork over personal ambition.” — Jean-Francois Cope</item>
+        <item>“I’d rather regret the things I’ve done than regret the things I haven’t done.” —Lucille Ball</item>
+        <item>“When you arise in the morning, think of what a privilege it is to be alive, to think, to enjoy, to love…” – Marcus Aurelius</item>
+        <item>“Inspiration does exist, but it must find you working.” —Pablo Picasso</item>
+        <item>“The only one who can tell you “you can’t win” is you and you don’t have to listen.” —Jessica Ennis</item>
+        <item>“Life is like riding a bicycle. To keep your balance you must keep moving.” —Albert Einstein</item>
+        <item>“I have never let my schooling interfere with my education.” —Mark Twain</item>
+        <item>“If you can't yet do great things, do small things in a great way.” ―Napoleon Hill</item>
+        <item>“The way you live your days is the way you live your life.” —Annie Dillard</item>
+        <item>"The reason we struggle with insecurity is because we compare our behind-the-scenes with everyone else’s highlight reel." —Steve Furtick</item>
+        <item>“If you don’t risk anything, you risk even more.” —Erica Jong</item>
+        <item>“Failure is simply the opportunity to begin again, this time more intelligently.” — Henry Ford</item>
+        <item>“Our greatest glory is not in never falling, but in rising every time we fall.” — Confucius </item>
+        <item>“If you change the way you look at things, the things you look at change.” — Wayne Dyer</item>
+        <item>“We must reach out our hand in friendship and dignity both to those who would befriend us and those who would be our enemy.” — Arthur Ashe</item>
     </string-array>
     <string-array name="quotes2">
-        <item>This is quote 2.0</item>
-        <item>This is quote 2.1</item>
-        <item>This is quote 3.2</item>
+        <item>“It's fine to celebrate success but it is more important to heed the lessons of failure.” — Bill Gates</item>
+        <item>“When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.” — Henry Ford</item>
+        <item>“We are what we repeatedly do. Excellence, then, is not an act, but a habit.” — Aristotle</item>
+        <item>“Hustle beats talent when talent doesn’t hustle” – Ross Simmonds</item>
+        <item>“Never let success get to your head and never let failure get to your heart.” —Drake</item>
+        <item>“For the great doesn’t happen through impulse alone, and is a succession of little things that are brought together.” —Vincent van GoghThis is quote 1.0</item>
+        <item>“Resilience is when you address uncertainty with flexibility.” —Unknown</item>
+        <item>“It’s not the will to win that matters—everyone has that. It’s the will to prepare to win that matters.” —Paul Bryant</item>
+        <item>“True humility is not thinking less of yourself; it is thinking of yourself less.” — C.S. Lewis</item>
+        <item>“Courage is like a muscle. We strengthen it by use.” —Ruth Gordo</item>
+        <item>"More is lost by indecision than wrong decision.” —Marcus Tullius Cicero</item>
+        <item>“You can never leave footprints that last if you are always walking on tiptoe.” —Leymah Gbowee</item>
+        <item>“I choose to make the rest of my life the best of my life.” —Louise Hay</item>
+        <item>“Success is stumbling from failure to failure with no loss of enthusiasm.” ―Winston Churchill</item>
+        <item>If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. –-Oprah Winfrey</item>
+        <item>Always remember that you are absolutely unique. Just like everyone else. —Margaret Mead</item>
+        <item>Don't judge each day by the harvest you reap but by the seeds that you plant. —Robert Louis Stevenson</item>
+        <item>“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</item>
+        <item>“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</item>
+        <item>“Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.” — Mark Twain</item>
+        <item>“When you give joy to other people, you get more joy in return. You should give a good thought to happiness that you can give out.”— Eleanor Roosevelt</item>
+        <item>“When you change your thoughts, remember to also change your world.”—Norman Vincent Peale</item>
     </string-array>
     <string-array name="quotes3">
-        <item>This is quote 3.0</item>
-        <item>This is quote 3.1</item>
-        <item>This is quote 3.2</item>
+        <item>“It is only when we take chances, when our lives improve. The initial and the most difficult risk that we need to take is to become honest. —Walter Anderson</item>
+        <item>“Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together.”—Diane McLaren</item>
+        <item>"Success is not final; failure is not fatal: It is the courage to continue that counts." — Winston S. Churchill</item>
+        <item>"It is better to fail in originality than to succeed in imitation." — Herman Melville</item>
+        <item>"The road to success and the road to failure are almost exactly the same." — Colin R. Davis</item>
+        <item>“Success usually comes to those who are too busy looking for it.” — Henry David Thoreau</item>
+        <item>“Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.” —Dale Carnegie</item>
+        <item>“There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.” —Mister Rogers</item>
+        <item>“Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.” —John Wooden</item>
+        <item>“I never dreamed about success. I worked for it.” —Estée Lauder</item>
+        <item>“Success is getting what you want, happiness is wanting what you get.” ―W. P. Kinsella</item>
+        <item>“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty." — Winston Churchill</item>
+        <item>“Don’t let yesterday take up too much of today.” — Will Rogers</item>
+        <item>“You learn more from failure than from success. Don’t let it stop you. Failure builds character.” — Unknown </item>
+        <item>“If you are working on something that you really care about, you don’t have to be pushed. The vision pulls you.” — Steve Jobs</item>
+        <item>“Experience is a hard teacher because she gives the test first, the lesson afterwards.” ―Vernon Sanders Law</item>
+        <item>“To know how much there is to know is the beginning of learning to live.” —Dorothy West</item>
+        <item>“Goal setting is the secret to a compelling future.” — Tony Robbins</item>
+        <item>“Everything you can imagine is real!” — Pablo Picasso</item>
+        <item>"Fall seven times, stand up eight." – Japanese Proverb</item>
+        <item>"Sometimes the right path is not the easiest one." – Grandmother Willow, Pocahontas</item>
+        <item>“If you focus on what you left behind, you will never see what lies ahead.” – Gusteau, Ratatouille</item>
+        <item>"Never doubt yourself, it will only hold you back." – J.M. Barrie</item>
     </string-array>
 
 </resources>
