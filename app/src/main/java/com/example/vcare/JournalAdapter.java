@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -33,6 +34,22 @@ public class JournalAdapter extends RecyclerView.Adapter<JournalAdapter.JournalV
     @Override
     public void onBindViewHolder(@NonNull JournalViewHolder holder, int position) {
         holder.promptTxt.setText(prompts.get(position));
+
+        if(position % 2 == 0){
+            holder.cardView.setBackgroundColor(
+                    ContextCompat.getColor(
+                            context,
+                            R.color.white
+                    )
+            );
+        } else{
+            holder.cardView.setBackgroundColor(
+                    ContextCompat.getColor(
+                            context,
+                            R.color.light_green
+                    )
+            );
+        }
     }
 
     @Override

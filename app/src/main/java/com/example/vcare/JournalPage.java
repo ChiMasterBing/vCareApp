@@ -2,7 +2,9 @@ package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
 
 
 import android.content.Intent;
@@ -76,6 +78,8 @@ back button
 
         JournalRecView.setAdapter(journalAdapter);
         JournalRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        SnapHelper helper = new LinearSnapHelper();
+        helper.attachToRecyclerView(JournalRecView);
     }
 
     private ArrayList<String> dummyStrings(){
