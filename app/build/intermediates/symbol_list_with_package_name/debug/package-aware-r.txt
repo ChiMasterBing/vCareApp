@@ -67,7 +67,6 @@ array imgPrompts2
 array imgPrompts3
 array preloaded_fonts
 array prompts
-array prompts2
 array prompts3
 array quotes
 array quotes2

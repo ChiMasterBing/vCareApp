@@ -31,8 +31,9 @@ com/example/vcare/DailyQuote.java
 com/example/vcare/PrivacyPolicy.java
  com.example.vcare.PrivacyPolicy
  com.example.vcare.PrivacyPolicy$1
-com/example/vcare/Menu.java
- com.example.vcare.Menu
+com/example/vcare/JournalPage.java
+ com.example.vcare.JournalPage
+ com.example.vcare.JournalPage$1
 com/example/vcare/AccountInfo.java
  com.example.vcare.AccountInfo
  com.example.vcare.AccountInfo$1
@@ -62,10 +63,9 @@ com/example/vcare/ArticleWebView.java
  com.example.vcare.ArticleWebView$1
  com.example.vcare.ArticleWebView$2
  com.example.vcare.ArticleWebView$Callback
-com/example/vcare/RegisterPage.java
- com.example.vcare.RegisterPage
- com.example.vcare.RegisterPage$1
- com.example.vcare.RegisterPage$1$1
+com/example/vcare/JournalAdapter.java
+ com.example.vcare.JournalAdapter
+ com.example.vcare.JournalAdapter$JournalViewHolder
 com/example/vcare/ForgotPassPage.java
  com.example.vcare.ForgotPassPage
  com.example.vcare.ForgotPassPage$1
@@ -74,11 +74,11 @@ com/example/vcare/SavedScreen.java
 com/example/vcare/Citations.java
  com.example.vcare.Citations
  com.example.vcare.Citations$1
-com/example/vcare/JournalAdapter.java
- com.example.vcare.JournalAdapter
- com.example.vcare.JournalAdapter$JournalViewHolder
-com/example/vcare/JournalPage.java
- com.example.vcare.JournalPage
- com.example.vcare.JournalPage$1
 com/example/vcare/HomeScreen.java
  com.example.vcare.HomeScreen
+com/example/vcare/RegisterPage.java
+ com.example.vcare.RegisterPage
+ com.example.vcare.RegisterPage$1
+ com.example.vcare.RegisterPage$1$1
+com/example/vcare/Menu.java
+ com.example.vcare.Menu

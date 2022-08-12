@@ -66,7 +66,6 @@ int array imgPrompts2 0x7f030004
 int array imgPrompts3 0x7f030005
 int array preloaded_fonts 0x7f030006
 int array prompts 0x7f030007
-int array prompts2 0x7f030008
 int array prompts3 0x7f030009
 int array quotes 0x7f03000a
 int array quotes2 0x7f03000b

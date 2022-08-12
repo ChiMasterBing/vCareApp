@@ -17,12 +17,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class JournalPage extends AppCompatActivity {
     private String[] prompts;
-    private String[] quotes;
+    /*private String[] quotes;
     private String[] prompts2;
     private String[] quotes2;
     private String[] prompts3;
@@ -43,10 +45,12 @@ public class JournalPage extends AppCompatActivity {
     private Button txtPrompt3;
     private Button txtQuote3;
     private ImageButton imgBtn3;
+     */
 
     private ImageView big;
 
     private RecyclerView JournalRecView;
+    private int numPrompts = 3;
 /*TODO:
 Color scheme has been finalized by CD team we are using color codes BEE3DB, 89B0AE, EC9192, and FFD6BA.
 Text should be Roboto Mono for now. Please make sure to update your screen(s) accordingly.
@@ -74,7 +78,7 @@ back button
 
         JournalRecView = findViewById(R.id.journalRecView);
 
-        JournalAdapter journalAdapter = new JournalAdapter(this, dummyStrings());
+        JournalAdapter journalAdapter = new JournalAdapter(this, getRandomPrompts(numPrompts));
 
         JournalRecView.setAdapter(journalAdapter);
         JournalRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
@@ -82,13 +86,22 @@ back button
         helper.attachToRecyclerView(JournalRecView);
     }
 
-    private ArrayList<String> dummyStrings(){
-        ArrayList<String> temp = new ArrayList<String>();
+    private ArrayList<String> getRandomPrompts(int num){
+        //Eventually need a way to not reuse prompts
 
-        for(int i = 0; i < 10; i++){
-            temp.add("prompt " + i);
+        //Randomly select prompts from prompts String[] by using a shuffled list
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for(int i = 0; i < prompts.length; i++){
+            list.add(i);
         }
-        return temp;
+        Collections.shuffle(list);
+
+        ArrayList<String> selectedPrompts = new ArrayList<String>();
+        for(int i = 0; i < num; i++){
+            selectedPrompts.add(prompts[list.get(i)]);
+        }
+
+        return selectedPrompts;
     }
 
     public void onImg1Clicked(View view) {
@@ -115,10 +128,10 @@ back button
     private void initialize() {
 
         prompts = getResources().getStringArray(R.array.prompts);
+        /*
         prompt1 = new Prompt("prompt1",prompts[new Random().nextInt(prompts.length)]); //I made a class for prompts, I believe it's needed to save, but I'm not 100% sure
         quotes = getResources().getStringArray(R.array.quotes);
         images = getResources().obtainTypedArray(R.array.imgPrompts);
-        prompts2 = getResources().getStringArray(R.array.prompts2); //if not, this is how you would declare without class
         quotes2 = getResources().getStringArray(R.array.quotes2);
         images2 = getResources().obtainTypedArray(R.array.imgPrompts2);
         prompts3 = getResources().getStringArray(R.array.prompts3);
@@ -145,5 +158,6 @@ back button
         txtPrompt3.setText(prompts3[new Random().nextInt(prompts3.length)]);
         txtQuote3 = findViewById(R.id.txtQuote3);
         txtQuote3.setText(quotes2[new Random().nextInt(quotes3.length)]);
+         */
     }
 }
