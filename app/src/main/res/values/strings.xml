@@ -39,25 +39,9 @@
         <item>What am I most afraid of about life?</item>
         <item>Do I have any regrets that I can\’t let go of? Why? It\’s ok to have them :)</item>
     </string-array>
-    <string-array name="prompts3">
-        <item>This is prompt 3.0</item>
-        <item>This is prompt 3.1</item>
-        <item>This is prompt 3.2</item>
-    </string-array>
     <string-array name="quotes">
         <item>This is quote 1.0</item>
         <item>This is quote 1.1</item>
         <item>This is quote 1.2</item>
     </string-array>
-    <string-array name="quotes2">
-        <item>This is quote 2.0</item>
-        <item>This is quote 2.1</item>
-        <item>This is quote 3.2</item>
-    </string-array>
-    <string-array name="quotes3">
-        <item>This is quote 3.0</item>
-        <item>This is quote 3.1</item>
-        <item>This is quote 3.2</item>
-    </string-array>
-
 </resources>
