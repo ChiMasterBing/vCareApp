@@ -132,10 +132,6 @@
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_settings_24.png"
     },
     {
-        "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_prompt_list.xml.flat",
-        "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\layout\\prompt_list.xml"
-    },
-    {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
@@ -324,6 +320,10 @@
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_quote.xml.flat",
+        "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\layout\\item_quote.xml"
+    },
+    {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_account_circle_24.png.flat",
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_account_circle_24.png"
     },
@@ -362,6 +362,10 @@
     {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_favorite_border_24.png.flat",
         "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_favorite_border_24.png"
+    },
+    {
+        "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_prompt.xml.flat",
+        "source": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\src\\main\\res\\layout\\item_prompt.xml"
     },
     {
         "merged": "C:\\Users\\lixin\\Documents\\GitHub\\vCareApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sittinggirl.png.flat",

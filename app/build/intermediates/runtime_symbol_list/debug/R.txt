@@ -66,10 +66,7 @@ int array imgPrompts2 0x7f030004
 int array imgPrompts3 0x7f030005
 int array preloaded_fonts 0x7f030006
 int array prompts 0x7f030007
-int array prompts3 0x7f030009
 int array quotes 0x7f03000a
-int array quotes2 0x7f03000b
-int array quotes3 0x7f03000c
 int attr actionBarDivider 0x7f040000
 int attr actionBarItemBackground 0x7f040001
 int attr actionBarPopupTheme 0x7f040002
@@ -2115,7 +2112,6 @@ int id homeAsUp 0x7f0a0109
 int id homeScreenTitle 0x7f0a010a
 int id honorRequest 0x7f0a010b
 int id horizontal 0x7f0a010c
-int id horizontalScrollView 0x7f0a010d
 int id icon 0x7f0a010e
 int id icon_group 0x7f0a010f
 int id icon_only 0x7f0a0110
@@ -2125,9 +2121,6 @@ int id ignoreRequest 0x7f0a0113
 int id image 0x7f0a0114
 int id imageBig 0x7f0a0115
 int id imageCitationsBtn 0x7f0a0116
-int id img1 0x7f0a0117
-int id img2 0x7f0a0118
-int id img3 0x7f0a0119
 int id info 0x7f0a011a
 int id invisible 0x7f0a011b
 int id invisible_frame 0x7f0a011c
@@ -2259,7 +2252,9 @@ int id progress_horizontal 0x7f0a0199
 int id promptCardView 0x7f0a019a
 int id promptTxt 0x7f0a019b
 int id promptsButton 0x7f0a019c
+int id quoteCardView 0x7f0a0260
 int id quoteTitle 0x7f0a019d
+int id quoteTxt 0x7f0a0261
 int id quoteView 0x7f0a019e
 int id quotesButton 0x7f0a019f
 int id radio 0x7f0a01a0
@@ -2423,12 +2418,6 @@ int id txtHelpline 0x7f0a023d
 int id txtHotline 0x7f0a023e
 int id txtLifelineNumber 0x7f0a023f
 int id txtNationalDomesticViolenceHotline 0x7f0a0240
-int id txtPrompt1 0x7f0a0241
-int id txtPrompt2 0x7f0a0242
-int id txtPrompt3 0x7f0a0243
-int id txtQuote1 0x7f0a0244
-int id txtQuote2 0x7f0a0245
-int id txtQuote3 0x7f0a0246
 int id txtSAMHSANationalHelpline 0x7f0a0247
 int id txtSuicidePreventionLifeline 0x7f0a0248
 int id txtTextLine 0x7f0a0249
@@ -2580,6 +2569,8 @@ int layout fui_register_email_layout 0x7f0d0058
 int layout fui_welcome_back_email_link_prompt_layout 0x7f0d0059
 int layout fui_welcome_back_idp_prompt_layout 0x7f0d005a
 int layout fui_welcome_back_password_prompt_layout 0x7f0d005b
+int layout item_prompt 0x7f0d00a9
+int layout item_quote 0x7f0d00aa
 int layout material_chip_input_combo 0x7f0d005c
 int layout material_clock_display 0x7f0d005d
 int layout material_clock_display_divider 0x7f0d005e
@@ -2637,7 +2628,6 @@ int layout notification_template_media 0x7f0d0091
 int layout notification_template_media_custom 0x7f0d0092
 int layout notification_template_part_chronometer 0x7f0d0093
 int layout notification_template_part_time 0x7f0d0094
-int layout prompt_list 0x7f0d0095
 int layout saved_list 0x7f0d0096
 int layout select_dialog_item_material 0x7f0d0097
 int layout select_dialog_multichoice_material 0x7f0d0098

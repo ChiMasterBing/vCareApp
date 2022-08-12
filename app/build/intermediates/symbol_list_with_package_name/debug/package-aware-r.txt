@@ -67,10 +67,7 @@ array imgPrompts2
 array imgPrompts3
 array preloaded_fonts
 array prompts
-array prompts3
 array quotes
-array quotes2
-array quotes3
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -2116,7 +2113,6 @@ id homeAsUp
 id homeScreenTitle
 id honorRequest
 id horizontal
-id horizontalScrollView
 id icon
 id icon_group
 id icon_only
@@ -2126,9 +2122,6 @@ id ignoreRequest
 id image
 id imageBig
 id imageCitationsBtn
-id img1
-id img2
-id img3
 id info
 id invisible
 id invisible_frame
@@ -2260,7 +2253,9 @@ id progress_horizontal
 id promptCardView
 id promptTxt
 id promptsButton
+id quoteCardView
 id quoteTitle
+id quoteTxt
 id quoteView
 id quotesButton
 id radio
@@ -2424,12 +2419,6 @@ id txtHelpline
 id txtHotline
 id txtLifelineNumber
 id txtNationalDomesticViolenceHotline
-id txtPrompt1
-id txtPrompt2
-id txtPrompt3
-id txtQuote1
-id txtQuote2
-id txtQuote3
 id txtSAMHSANationalHelpline
 id txtSuicidePreventionLifeline
 id txtTextLine
@@ -2581,6 +2570,8 @@ layout fui_register_email_layout
 layout fui_welcome_back_email_link_prompt_layout
 layout fui_welcome_back_idp_prompt_layout
 layout fui_welcome_back_password_prompt_layout
+layout item_prompt
+layout item_quote
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2638,7 +2629,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout prompt_list
 layout saved_list
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
