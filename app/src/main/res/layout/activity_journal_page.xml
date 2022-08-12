@@ -20,170 +20,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:srcCompat="@drawable/ic_arrowback" />
 
-    <LinearLayout
-        android:id="@+id/ActionBarProductInfo"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/journalRecView"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </LinearLayout>
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="414dp"
-        android:layout_height="215dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="48dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageBig"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/txtPrompt3"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:focusable="true"
-                android:fontFamily="@font/roboto_mono"
-                android:gravity="center"
-                android:onClick="onImg1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <Button
-                android:id="@+id/txtQuote3"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/roboto_mono"
-                android:linksClickable="true"
-                android:longClickable="true"
-                android:onClick="onTxtQuote1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/img3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onImg1Clicked"
-                tools:srcCompat="@tools:sample/avatars" />
-
-            <Button
-                android:id="@+id/txtPrompt2"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/roboto_mono"
-                android:gravity="center"
-                android:onClick="onTxtPrompt1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <Button
-                android:id="@+id/txtQuote2"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/roboto_mono"
-                android:linksClickable="true"
-                android:longClickable="true"
-                android:onClick="onTxtQuote1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/img2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onImg1Clicked"
-                tools:srcCompat="@tools:sample/avatars" />
-
-            <Button
-                android:id="@+id/txtPrompt1"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/roboto_mono"
-                android:gravity="center"
-                android:onClick="onTxtPrompt1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <Button
-                android:id="@+id/txtQuote1"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="100dp"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/roboto_mono"
-                android:linksClickable="true"
-                android:longClickable="true"
-                android:onClick="onTxtQuote1Clicked"
-                android:textColor="#EC9192"
-                android:textSize="25sp"
-                app:backgroundTint="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/img1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onImg1Clicked"
-                tools:srcCompat="@tools:sample/avatars" />
-
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <ImageView
-        android:id="@+id/imageBig"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="105dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/backJournal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="0dp"
-        android:layout_height="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
         android:gravity="start|top"
@@ -192,17 +43,19 @@
         android:onClick="onEditTextClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/journalRecView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/journalSaveResponse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onSaveBtnClicked"
         android:text="Save Response"
         app:backgroundTint="#BEE3DB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        android:onClick="onSaveBtnClicked"/>
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

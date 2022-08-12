@@ -15,8 +15,6 @@
         <item>What is my goal today and how will I achieve it?</item>
         <item>Have I ever accomplished a goal only to find out it wasn\’t fulfilling for me? What kind of goal was it?</item>
         <item>When was the last time I accomplished a goal that made me feel good for a long time? What kind of goal was it?</item>
-    </string-array>
-    <string-array name="prompts2">
         <item>When was the last time I felt most like myself?</item>
         <item>What am I still trying to prove about myself and why?</item>
         <item>What is my heart telling me? What is my mind telling me? </item>
@@ -41,25 +39,9 @@
         <item>What am I most afraid of about life?</item>
         <item>Do I have any regrets that I can\’t let go of? Why? It\’s ok to have them :)</item>
     </string-array>
-    <string-array name="prompts3">
-        <item>This is prompt 3.0</item>
-        <item>This is prompt 3.1</item>
-        <item>This is prompt 3.2</item>
-    </string-array>
     <string-array name="quotes">
         <item>This is quote 1.0</item>
         <item>This is quote 1.1</item>
         <item>This is quote 1.2</item>
     </string-array>
-    <string-array name="quotes2">
-        <item>This is quote 2.0</item>
-        <item>This is quote 2.1</item>
-        <item>This is quote 3.2</item>
-    </string-array>
-    <string-array name="quotes3">
-        <item>This is quote 3.0</item>
-        <item>This is quote 3.1</item>
-        <item>This is quote 3.2</item>
-    </string-array>
-
 </resources>
