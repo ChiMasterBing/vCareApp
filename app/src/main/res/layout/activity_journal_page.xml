@@ -20,21 +20,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:srcCompat="@drawable/ic_arrowback" />
 
-    <LinearLayout
-        android:id="@+id/ActionBarProductInfo"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/journalRecView"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageBig"
+        app:layout_constraintTop_toBottomOf="@+id/backJournal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        />
 
     <HorizontalScrollView
+        android:visibility="gone"
         android:id="@+id/horizontalScrollView"
         android:layout_width="414dp"
         android:layout_height="215dp"
@@ -178,7 +175,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/journalRecView" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -192,7 +189,7 @@
         android:onClick="onEditTextClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/journalRecView" />
 
     <Button
         android:id="@+id/button"

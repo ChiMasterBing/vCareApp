@@ -63,6 +63,9 @@ com/example/vcare/ArticleWebView.java
  com.example.vcare.ArticleWebView$1
  com.example.vcare.ArticleWebView$2
  com.example.vcare.ArticleWebView$Callback
+com/example/vcare/JournalAdapter.java
+ com.example.vcare.JournalAdapter
+ com.example.vcare.JournalAdapter$JournalViewHolder
 com/example/vcare/ForgotPassPage.java
  com.example.vcare.ForgotPassPage
  com.example.vcare.ForgotPassPage$1

@@ -1,6 +1,8 @@
 package com.example.vcare;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.content.Intent;
@@ -13,6 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class JournalPage extends AppCompatActivity {
@@ -40,6 +43,8 @@ public class JournalPage extends AppCompatActivity {
     private ImageButton imgBtn3;
 
     private ImageView big;
+
+    private RecyclerView JournalRecView;
 /*TODO:
 Color scheme has been finalized by CD team we are using color codes BEE3DB, 89B0AE, EC9192, and FFD6BA.
 Text should be Roboto Mono for now. Please make sure to update your screen(s) accordingly.
@@ -65,7 +70,21 @@ back button
             }
         });
 
+        JournalRecView = findViewById(R.id.journalRecView);
 
+        JournalAdapter journalAdapter = new JournalAdapter(this, dummyStrings());
+
+        JournalRecView.setAdapter(journalAdapter);
+        JournalRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+    }
+
+    private ArrayList<String> dummyStrings(){
+        ArrayList<String> temp = new ArrayList<String>();
+
+        for(int i = 0; i < 10; i++){
+            temp.add("prompt " + i);
+        }
+        return temp;
     }
 
     public void onImg1Clicked(View view) {
